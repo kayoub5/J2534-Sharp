@@ -4,7 +4,7 @@
     <id>J2534-Sharp</id>
     <version>$version$</version>
     <title>SAE J2534 Library</title>
-    <authors>Brian Humlicek, Michael Kelly</authors>
+    <authors>BrianHumlicek</authors>
     <owners>Brian Humlicek</owners>
     <licenseUrl>https://raw.githubusercontent.com/BrianHumlicek/J2534-Sharp/master/LICENSE.md</licenseUrl>
     <projectUrl>https://github.com/BrianHumlicek/J2534-Sharp.git</projectUrl>
