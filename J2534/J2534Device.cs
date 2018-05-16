@@ -123,7 +123,6 @@ namespace J2534
         protected override void DisposeManaged()
         {
             API.PTClose(deviceId);
-            base.DisposeManaged();
         }
     }
 }

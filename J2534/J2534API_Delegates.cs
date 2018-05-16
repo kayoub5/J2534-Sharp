@@ -74,9 +74,9 @@ namespace J2534
         internal PassThruGetLastError PTGetLastError = delegate (IntPtr pErr) { return J2534Err.FUNCTION_NOT_ASSIGNED; };
         internal PassThruIoctl PTIoctl = delegate (int HandleID, int IoctlID, IntPtr Input, IntPtr Output) { return J2534Err.FUNCTION_NOT_ASSIGNED; };
         //v2.02
-        internal PassThruConnectv202 PTConnectv202;
-        internal PassThruSetProgrammingVoltagev202 PTSetProgrammingVoltagev202;
-        internal PassThruReadVersionv202 PTReadVersionv202;
+        internal PassThruConnectv202 PTConnectv202 = delegate (int ProtocolID, int ConnectFlags, IntPtr ChannelID) { return J2534Err.FUNCTION_NOT_ASSIGNED; } ;
+        internal PassThruSetProgrammingVoltagev202 PTSetProgrammingVoltagev202 = delegate (int Pin, int Voltage) { return J2534Err.FUNCTION_NOT_ASSIGNED; };
+        internal PassThruReadVersionv202 PTReadVersionv202 = delegate (IntPtr pFirmwareVer, IntPtr pDllVer, IntPtr pAPIVer) { return J2534Err.FUNCTION_NOT_ASSIGNED; };
         //v4.04
         internal PassThruOpen PTOpen = delegate (IntPtr pDeviceName, IntPtr DeviceID) { return J2534Err.FUNCTION_NOT_ASSIGNED; };
         internal PassThruClose PTClose = delegate (int DeviceID) { return J2534Err.FUNCTION_NOT_ASSIGNED; };

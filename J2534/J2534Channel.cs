@@ -459,7 +459,6 @@ namespace J2534
         {
             API.PTDisconnect(channelId);
             hJ2534MessageArray?.Dispose();
-            base.DisposeManaged();
         }
     }
 }

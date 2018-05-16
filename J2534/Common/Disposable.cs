@@ -48,13 +48,9 @@ namespace J2534.Common
                 {
                     OnDisposing?.Invoke();
                     DisposeManaged();
-                    DisposeUnmanaged();
                     GC.SuppressFinalize(this);
                 }
-                else
-                {
-                    DisposeUnmanaged();
-                }
+                DisposeUnmanaged();
             }
         }
         public void Dispose()

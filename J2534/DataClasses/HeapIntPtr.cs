@@ -40,7 +40,6 @@ namespace J2534.DataClasses
         protected override void DisposeUnmanaged()
         {
             Marshal.FreeHGlobal(Ptr);
-            base.DisposeUnmanaged();
         }
     }
 }

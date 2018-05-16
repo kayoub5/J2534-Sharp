@@ -182,10 +182,6 @@ namespace J2534.DataClasses
         {
             return HeapJ2534MessageArrayPtr.Ptr;
         }
-        protected override void DisposeManaged()
-        {
-            base.DisposeManaged();
-        }
         protected override void DisposeUnmanaged()
         {
             Marshal.FreeHGlobal(LengthPtr);
