@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>J2534-Sharp</id>
+    <version>$version$</version>
+    <title>SAE J2534 Library</title>
+    <authors>Brian Humlicek, Michael Kelly</authors>
+    <owners>Brian Humlicek</owners>
+    <licenseUrl></licenseUrl>
+    <projectUrl>https://github.com/BrianHumlicek/J2534-Sharp.git</projectUrl>
+    <iconUrl></iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>J2534-Sharp provides an easy solution to working with unmanaged J2534 librarys.  It handles all the heavy lifting and wraps the SAE spec library with a C# friendly API</description>
+    <releaseNotes></releaseNotes>
+    <copyright>Copyright 2018 Brian Humlicek.  All rights reserved.</copyright>
+    <tags>J2534 OBD SAE Diagnositcs OBD-II Drewtech</tags>
+  </metadata>
+  <files>
+	<file src="J2534\bin\$configuration$\J2534-Sharp.dll" target="lib\net46\" />
+  </files>
+</package>
