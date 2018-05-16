@@ -6,9 +6,9 @@
     <title>SAE J2534 Library</title>
     <authors>Brian Humlicek, Michael Kelly</authors>
     <owners>Brian Humlicek</owners>
-    <licenseUrl></licenseUrl>
+    <licenseUrl>https://raw.githubusercontent.com/BrianHumlicek/J2534-Sharp/master/LICENSE.md</licenseUrl>
     <projectUrl>https://github.com/BrianHumlicek/J2534-Sharp.git</projectUrl>
-    <iconUrl></iconUrl>
+    <iconUrl>https://raw.githubusercontent.com/BrianHumlicek/J2534-Sharp/master/car-diagnostics-icon-01-.jpg</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>J2534-Sharp provides an easy solution to working with unmanaged J2534 librarys.  It handles all the heavy lifting and wraps the SAE spec library with a C# friendly API</description>
     <releaseNotes></releaseNotes>
