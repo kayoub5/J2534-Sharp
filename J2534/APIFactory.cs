@@ -40,10 +40,8 @@ namespace J2534
         {
             var result = new List<APIInfo>();
 
-            foreach (var API in GetRegisteryEntries())
+            foreach (APIInfo API in GetRegisteryEntries())
                 result.Add(API);
-
-            result.AddRange(Directory.GetFiles(".", "*.dll").Select(Filename => new APIInfo("UNKNOWN", Filename, "")));
 
             return result;
         }
@@ -119,7 +117,7 @@ namespace J2534
 
                 yield return new APIInfo((string)deviceKey.GetValue("Name", ""),
                                          (string)deviceKey.GetValue("FunctionLibrary", ""),
-                                         (string)deviceKey.GetValue(DetailsBuilder.ToString()));
+                                         DetailsBuilder.ToString());
             }
         }
 
