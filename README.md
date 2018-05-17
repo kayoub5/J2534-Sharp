@@ -1,6 +1,6 @@
 ### J2534-Sharp ###
 
-J2534-Sharp handles all the details of operating with un unmanaged SAE J2534 spec library and lets you deal with the important stuff.
+J2534-Sharp handles all the details of operating with unmanaged SAE J2534 spec library and lets you deal with the important stuff.
 
 Available on NuGet! [NuGet Gallery: J2534-Sharp]
 
@@ -128,9 +128,7 @@ namespace J5234Examples
         {
             string DllFileName = APIFactory.GetAPIList().First().Filename;
 
-            J2534API API = APIFactory.GetAPI(DllFileName);
-            J2534Device Device = API.GetDevice();
-            J2534Channel Channel = Device.GetChannel(J2534Protocol.ISO15765, J2534Baud.ISO15765, J2534CONNECTFLAG.NONE);
+            J2534Channel Channel = APIFactory.GetAPI(DllFileName).GetDevice().GetChannel(J2534Protocol.ISO15765, J2534Baud.ISO15765, J2534CONNECTFLAG.NONE);
 
             Channel.StartMsgFilter(new MessageFilter(UserFilterType.PASS, new byte[] { 0x00, 0x00, 0x07, 0xE0}));
             Channel.StartMsgFilter(new MessageFilter(UserFilterType.STANDARDISO15765, new byte[] { 0x00, 0x00, 0x07, 0xE0 }));
