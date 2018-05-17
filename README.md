@@ -2,9 +2,7 @@
 
 J2534-Sharp handles all the details of operating with un unmanaged SAE J2534 spec library and lets you deal with the important stuff.
 
-Available on NuGet!
-
-- [NuGet Gallery: j2534-sharp]
+Available on NuGet! [NuGet Gallery: J2534-Sharp]
 
 ## Features ##
 
@@ -143,3 +141,4 @@ namespace J5234Examples
     }
 }
 ```
+[NuGet Gallery: J2534-Sharp]: http://www.nuget.org/packages/J2534-Sharp
