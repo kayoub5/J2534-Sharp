@@ -16,6 +16,7 @@
     <tags>J2534 OBD SAE Diagnositcs OBD-II Drewtech</tags>
   </metadata>
   <files>
-	<file src="J2534\bin\$configuration$\J2534-Sharp.dll" target="lib\net46\" />
+  	<file src="J2534\bin\$configuration$\J2534-Sharp.dll" target="lib\net46\" />
+    <file src="J2534\bin\$configuration$\J2534-Sharp.XML" target="lib\net46\" />
   </files>
 </package>
