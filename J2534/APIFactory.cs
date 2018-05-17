@@ -85,7 +85,6 @@ namespace J2534
             const string PASSTHRU_REGISTRY_PATH = @"Software\PassThruSupport.04.04";
             const string PASSTHRU_REGISTRY_PATH_6432 = @"Software\Wow6432Node\PassThruSupport.04.04";
 
-            //List<J2534RegisteryEntry> Entries = new List<J2534RegisteryEntry>();
             RegistryKey RootKey = Registry.LocalMachine.OpenSubKey(PASSTHRU_REGISTRY_PATH, false);
             if (RootKey == null)
             {
@@ -130,8 +129,6 @@ namespace J2534
             {
                 API.Dispose();
             }
-            Cache.Clear();
-            Cache = null;
         }
     }
 }

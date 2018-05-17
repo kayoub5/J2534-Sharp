@@ -41,8 +41,8 @@ namespace J2534
         {
             this.API = API;
             this.DeviceName = DeviceName;
-            this.deviceId = DeviceID;
-            this.sync = Sync;
+            deviceId = DeviceID;
+            sync = Sync;
 
             using (var hFirmwareVersion = new HeapString(80))
             using (var hDllVersion = new HeapString(80))
@@ -114,9 +114,9 @@ namespace J2534
                 {
                     API.CheckStatus(API.PTConnect(deviceId, (int)ProtocolID, (int)ConnectFlags, (int)Baud, (IntPtr)hChannelID));
                 }
-                var result = new J2534Channel(this, ProtocolID, Baud, ConnectFlags, hChannelID.Value, ChannelLevelSync ? new object() : sync);
-                OnDisposing += result.Dispose;
-                return result;
+                var NewChannel = new J2534Channel(this, ProtocolID, Baud, ConnectFlags, hChannelID.Value, ChannelLevelSync ? new object() : sync);
+                OnDisposing += NewChannel.Dispose;
+                return NewChannel;
             }
         }
 

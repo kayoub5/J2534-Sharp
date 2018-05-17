@@ -29,10 +29,15 @@ namespace J2534.DataClasses
     public class J2534Exception : Exception
     {
         public J2534Err Status { get; }
+        public string StatusDescription { get { return Status.GetDescription(); } }
+        public string AdditionalDescription { get; }
         public override string Message { get; }
-        public J2534Exception(J2534Err Status, string Message = null)
+        public J2534Exception(J2534Err Status, string Message = "")
         {
-             Message = String.IsNullOrWhiteSpace(Message) ? Status.GetDescription() : Message;
+            this.Status = Status;
+            AdditionalDescription = Message;
+            //Pick the longer (presumably more detailed) message for the base exception message.
+            Message = (StatusDescription?.Length ?? 0) > (Message?.Length ?? 0) ? StatusDescription : Message;
         }
     }
 }

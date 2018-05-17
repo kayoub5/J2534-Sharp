@@ -78,7 +78,7 @@ namespace J2534
             {
                 lock (sync)
                 {
-                    CheckStatus(PTOpen((IntPtr)hDeviceName, hDeviceID.Ptr));
+                    CheckStatus(PTOpen(String.IsNullOrWhiteSpace(DeviceName) ? IntPtr.Zero : (IntPtr)hDeviceName, (IntPtr)hDeviceID));
                 }
                 var device = new J2534Device(this, hDeviceName.ToString(), hDeviceID.Value, sync);
                 OnDisposing += device.Dispose;
