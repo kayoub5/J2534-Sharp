@@ -5,7 +5,6 @@ J2534-Sharp handles all the details of operating with unmanaged SAE J2534 spec l
 Available on NuGet! [NuGet Gallery: J2534-Sharp]
 
 ## Features ##
-
 - No 'Unsafe' code.  All unmanaged memory references are done using the marshaller
 - Thread safe design.   Locking is done on API calls to allow concurrent access.
 - Simplified API.  Most API calls have had redundant data removed and offer method signatures for common use cases
@@ -13,12 +12,19 @@ Available on NuGet! [NuGet Gallery: J2534-Sharp]
 - Support for v5.00.  v5 J2534 support has been started, but I need more info to complete it.
 - Support for DrewTech API.  Support has been included for undocumented DrewTech API calls
 
-## Usage ##
+## TODO's ##
+- Merge the namespaces to just 'J2534'.  The namespace division seems to cause more clutter than it solves
+- Test the FivebaudInit and Fastinit methods.
+- Test with an actual v2.02 driver.
+- Finish the v5.00 implementation (can anyone send me the spec please??!!)
 
-The traditional usage will use explicit filter definition and using disposables within using's'.
+This project is very active and still somewhat fluid.  Breaking changes may occur and I wont apologize for them.
+
+## Feedback ##
+I want to hear from you if you have ideas or thoughts about this library.  Anything from features to critiques are welcome.  Also, I would love to know what kinds of things its being used for!
 
 ## Traditional usage ##
-
+The traditional usage will use explicit filter definition and using disposables within using's'.
 ```csharp
 using System;
 using System.Linq;
@@ -64,10 +70,9 @@ namespace J5234Examples
     }
 }
 ```
-The simplified usage take advantage of built in 'templates' for creating the filters
 
 ## Simplified usage ##
-
+The simplified usage take advantage of built in 'templates' for creating the filters
 ```csharp
 using System;
 using System.Linq;
@@ -99,12 +104,10 @@ namespace J5234Examples
 }
 ```
 
+## Alternate usage of the APIFactory ##
 Alternately, the API factory can be instanciated as an instance, and when disposed, will dispose all children with it.  This negates the need for explicit using's'
 except for the initial one for the APIFactory.  NOTE:  The APIFactory instance is only used to facilitate the disposal, and the instance does not need to be passed
 around.
-
-## Alternate usage of the APIFactory ##
-
 ```csharp
 using System;
 using System.Linq;
