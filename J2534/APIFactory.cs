@@ -80,7 +80,7 @@ namespace J2534
             DetailOptions.Add("SCI_A_ENGINE", "SCI-A Engine");
             DetailOptions.Add("SCI_A_TRANS", "SCI-A Transmission");
             DetailOptions.Add("SCI_B_ENGINE", "SCI-B Engine");
-            DetailOptions.Add("SCI_A_TRANS", "SCI-B Transmission");
+            DetailOptions.Add("SCI_B_TRANS", "SCI-B Transmission");
 
             const string PASSTHRU_REGISTRY_PATH = @"Software\PassThruSupport.04.04";
             const string PASSTHRU_REGISTRY_PATH_6432 = @"Software\Wow6432Node\PassThruSupport.04.04";

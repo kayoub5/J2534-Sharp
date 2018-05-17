@@ -39,18 +39,12 @@ namespace J5234Examples
     {
         static void Main(string[] args)
         {
-            MessageFilter PassFilter = new MessageFilter()
-            {
-                FilterType = J2534Filter.PASS_FILTER,
-                Mask = new byte[] { 0xFF, 0xFF, 0xFF, 0xFF },
-                Pattern = new byte[] { 0x00, 0x00, 0x07, 0xE8 }
-            };
             MessageFilter FlowControlFilter = new MessageFilter()
             {
                 FilterType = J2534Filter.FLOW_CONTROL_FILTER,
                 Mask = new byte[] { 0xFF, 0xFF, 0xFF, 0xFF },
-                Pattern = new byte[] { 0x00, 0x00, 0x07, 0xE0 },
-                FlowControl = new byte[] { 0x00, 0x00, 0x07, 0xE8 }
+                Pattern = new byte[] { 0x00, 0x00, 0x07, 0xE8 },
+                FlowControl = new byte[] { 0x00, 0x00, 0x07, 0xE0 }
             };
 
             string DllFileName = APIFactory.GetAPIList().First().Filename;
@@ -59,8 +53,6 @@ namespace J5234Examples
             using (J2534Device Device = API.GetDevice())
             using (J2534Channel Channel = Device.GetChannel(J2534Protocol.ISO15765, J2534Baud.ISO15765, J2534CONNECTFLAG.NONE))
             {
-
-                Channel.StartMsgFilter(PassFilter);
                 Channel.StartMsgFilter(FlowControlFilter);
                 Console.WriteLine($"Voltage is {Channel.MeasureBatteryVoltage() / 1000}");
                 Channel.SendMessage(new byte[] { 0x00, 0x00, 0x07, 0xE0, 0x01, 0x00 });
@@ -93,7 +85,6 @@ namespace J5234Examples
             using (J2534Device Device = API.GetDevice())
             using (J2534Channel Channel = Device.GetChannel(J2534Protocol.ISO15765, J2534Baud.ISO15765, J2534CONNECTFLAG.NONE))
             {
-                Channel.StartMsgFilter(new MessageFilter(UserFilterType.PASS, new byte[] { 0x00, 0x00, 0x07, 0xE0}));
                 Channel.StartMsgFilter(new MessageFilter(UserFilterType.STANDARDISO15765, new byte[] { 0x00, 0x00, 0x07, 0xE0}));
                 Console.WriteLine($"Voltage is {Channel.MeasureBatteryVoltage() / 1000}");
                 Channel.SendMessage(new byte[] { 0x00, 0x00, 0x07, 0xE0, 0x01, 0x00 });
@@ -133,7 +124,6 @@ namespace J5234Examples
 
             J2534Channel Channel = APIFactory.GetAPI(DllFileName).GetDevice().GetChannel(J2534Protocol.ISO15765, J2534Baud.ISO15765, J2534CONNECTFLAG.NONE);
 
-            Channel.StartMsgFilter(new MessageFilter(UserFilterType.PASS, new byte[] { 0x00, 0x00, 0x07, 0xE0}));
             Channel.StartMsgFilter(new MessageFilter(UserFilterType.STANDARDISO15765, new byte[] { 0x00, 0x00, 0x07, 0xE0 }));
             Console.WriteLine($"Voltage is {Channel.MeasureBatteryVoltage() / 1000}");
             Channel.SendMessage(new byte[] { 0x00, 0x00, 0x07, 0xE0, 0x01, 0x00 });
