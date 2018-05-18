@@ -102,10 +102,10 @@ namespace J2534
         /// <summary>
         /// Opens a channel on the device using the specified parameters
         /// </summary>
-        /// <param name="ProtocolID">The protocol to open</param>
-        /// <param name="Baud">Baudrate</param>
+        /// <param name="ProtocolID">Connection protocol</param>
+        /// <param name="Baud">Connection baud-rate</param>
         /// <param name="ConnectFlags">Connection flags</param>
-        /// <returns>Channel object</returns>
+        /// <returns>A connected J2534Channel object</returns>
         public J2534Channel GetChannel(J2534Protocol ProtocolID, J2534Baud Baud, J2534CONNECTFLAG ConnectFlags, bool ChannelLevelSync = false)
         {
             using (HeapInt hChannelID = new HeapInt())

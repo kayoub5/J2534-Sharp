@@ -24,7 +24,7 @@ using System.Threading;
 
 namespace J2534.Common
 {
-    public class BoolInterlock
+    internal class BoolInterlock
     {
         private int state = States.Unlocked;
 

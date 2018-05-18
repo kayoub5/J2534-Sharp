@@ -25,7 +25,7 @@ using System.Runtime.InteropServices;
 
 namespace J2534.Common
 {
-    public static class Kernal32
+    internal static class Kernal32
     {
         [DllImport("kernel32.dll")]
         public static extern IntPtr LoadLibrary(string Library);

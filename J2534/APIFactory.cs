@@ -35,17 +35,24 @@ namespace J2534
     public class APIFactory : Disposable
     {
         private static Dictionary<string, J2534API> Cache = new Dictionary<string, J2534API>();
-
-        public static List<APIInfo> GetAPIList()
+        /// <summary>
+        /// Queries the registry for registered J2534 API's
+        /// </summary>
+        /// <returns>Array of APIInfo</returns>
+        public static APIInfo[] GetAPIList()
         {
             var result = new List<APIInfo>();
 
             foreach (APIInfo API in GetRegisteryEntries())
                 result.Add(API);
 
-            return result;
+            return result.ToArray();
         }
-
+        /// <summary>
+        /// Loads an API, verifies its signature and returns the managed wrapper 
+        /// </summary>
+        /// <param name="Filename">DLL File to load</param>
+        /// <returns>JManaged 2534API</returns>
         public static J2534API GetAPI(string Filename)
         {
             if (Cache.ContainsKey(Filename)) return Cache[Filename];

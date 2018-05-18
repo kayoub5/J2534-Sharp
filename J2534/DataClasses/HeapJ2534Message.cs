@@ -84,7 +84,7 @@ namespace J2534.DataClasses
             get { return Marshal.ReadInt32(Ptr, 16); }
             private set
             {
-                if (value > CONST.J2534MESSAGESIZE) throw new ArgumentException("Message Data.Length is greator than fixed maximum");
+                if (value > CONST.J2534MESSAGESIZE) throw new ArgumentException("Message Data.Length is greater than fixed maximum");
                 Marshal.WriteInt32(Ptr, 16, value);
             }
         }

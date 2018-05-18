@@ -62,7 +62,7 @@ namespace J2534.Definitions
         NULL_PARAMETER = 0x04,
         [Description("IOCTL GET_CONFIG/SET_CONFIG parameter value is not recognized.")]
         INVALID_IOCTL_VALUE = 0x05,
-        [Description("Flags bit field(s) contaln(s) an invalid value.")]
+        [Description("Flags bit field(s) contain(s) an invalid value.")]
         INVALID_FLAGS = 0x06,
         [Description("Unspecified error, use PassThruGetLastError for obtaining error text string.")]
         FAILED = 0x07,
@@ -82,7 +82,7 @@ namespace J2534.Definitions
         DEVICE_IN_USE = 0x0E,
         [Description("IOCTL identifier is not recognized.")]
         INVALID_IOCTL_ID = 0x0F,
-        [Description("The PassThru device could not read any messages from the vehicie network.")]
+        [Description("The PassThru device could not read any messages from the vehicle network.")]
         BUFFER_EMPTY = 0x10,
         [Description("The PassThru device could not queue any more transmit messages destined for the vehicle network.")]
         BUFFER_FULL = 0x11,
@@ -100,7 +100,7 @@ namespace J2534.Definitions
         NO_FLOW_CONTROL = 0x17,
         [Description("An existing filter already matches this header or node identifier.")]
         NOT_UNIQUE = 0x18,
-        [Description("Unable to honor requested baudrate within required tolerances.")]
+        [Description("Unable to honor requested baud-rate within required tolerances.")]
         INVALID_BAUDRATE = 0x19,
         [Description("PassThru device identifier was not recognized.")]
         INVALID_DEVICE_ID = 0x1A,

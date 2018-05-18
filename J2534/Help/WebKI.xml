@@ -1,0 +1,578 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpKI>
+  <HelpKINode Title="ACTIVE_CHANNELS enumeration member" Url="html/2329e266-65ef-631d-378d-f1483027fec8.htm" />
+  <HelpKINode Title="ADC_READINGS_PER_SAMPLE enumeration member" Url="html/2329e266-65ef-631d-378d-f1483027fec8.htm" />
+  <HelpKINode Title="ADC_READINGS_PER_SECOND enumeration member" Url="html/2329e266-65ef-631d-378d-f1483027fec8.htm" />
+  <HelpKINode Title="AdditionalDescription property" Url="html/e82efaf5-c1ea-1c21-1668-6adfcdf61fa7.htm" />
+  <HelpKINode Title="Address property" Url="html/51258691-0aab-78ea-2855-7d09c97d6a44.htm" />
+  <HelpKINode Title="AddToFunctMsgLookupTable method" Url="html/4628589f-af2a-bb5a-05fd-f432a02e6f05.htm" />
+  <HelpKINode Title="APIFactory class">
+    <HelpKINode Title="APIFactory Class" Url="html/158abcdd-018f-6953-8d5d-a3fabe6d18ed.htm" />
+    <HelpKINode Title="constructor" Url="html/dd703dca-9a13-491c-a655-04fc38b45232.htm" />
+    <HelpKINode Title="fields" Url="html/a57f7588-1429-5ee9-62e7-1f17c1126411.htm" />
+    <HelpKINode Title="methods" Url="html/65af38b8-e1c8-18a9-8a97-a35cbddf85a7.htm" />
+    <HelpKINode Title="properties" Url="html/8fea705c-a9c8-481a-36ed-6882f29c8452.htm" />
+  </HelpKINode>
+  <HelpKINode Title="APIFactory.APIFactory constructor" Url="html/dd703dca-9a13-491c-a655-04fc38b45232.htm" />
+  <HelpKINode Title="APIFactory.DisposeManaged method" Url="html/054ef928-ef2c-c312-a664-f03608aebb06.htm" />
+  <HelpKINode Title="APIFactory.GetAPI method" Url="html/d9f2becb-4917-b9dd-af28-2594d44f10c6.htm" />
+  <HelpKINode Title="APIFactory.GetAPIList method" Url="html/de802b23-fbf0-d047-befe-162a952d35c8.htm" />
+  <HelpKINode Title="APIInfo class">
+    <HelpKINode Title="APIInfo Class" Url="html/93a68ac4-b61c-073e-fd15-d21fad1469a3.htm" />
+    <HelpKINode Title="constructor" Url="html/73de269e-5a10-dbe0-9a65-4b179f06065d.htm" />
+    <HelpKINode Title="methods" Url="html/a13b27e4-9f04-c73d-6040-0b001db124e9.htm" />
+    <HelpKINode Title="properties" Url="html/b9816848-fee6-8c03-7c62-f81098216bea.htm" />
+  </HelpKINode>
+  <HelpKINode Title="APIInfo.APIInfo constructor" Url="html/73de269e-5a10-dbe0-9a65-4b179f06065d.htm" />
+  <HelpKINode Title="APIInfo.Details property" Url="html/2ddd6a94-b646-ed51-20e9-565afe5a9f97.htm" />
+  <HelpKINode Title="APIInfo.Filename property" Url="html/48d7c344-80b6-6779-6de7-29946b570e86.htm" />
+  <HelpKINode Title="APIInfo.Name property" Url="html/fbcc464c-44d9-61b0-3374-df03a4063fe8.htm" />
+  <HelpKINode Title="APIVersion property" Url="html/2562233f-a9a6-9203-2183-07b6ed7a3364.htm" />
+  <HelpKINode Title="AUX enumeration member" Url="html/79c24fa1-2054-eeb2-3aff-92a87cd8c727.htm" />
+  <HelpKINode Title="AVERAGING_METHOD enumeration member" Url="html/2329e266-65ef-631d-378d-f1483027fec8.htm" />
+  <HelpKINode Title="BIT_SAMPLE_POINT enumeration member" Url="html/2329e266-65ef-631d-378d-f1483027fec8.htm" />
+  <HelpKINode Title="BLOCK enumeration member" Url="html/6ee4f9b5-d4c0-4aae-a2e4-f750b51cf1f1.htm" />
+  <HelpKINode Title="Block method" Url="html/39cd5205-f601-625f-9175-cc124b2f4eb7.htm" />
+  <HelpKINode Title="BLOCK_FILTER enumeration member" Url="html/43213ec0-d48a-d023-7e0c-e3960d915386.htm" />
+  <HelpKINode Title="BoolInterlock class">
+    <HelpKINode Title="BoolInterlock Class" Url="html/58930d2d-cf1f-51b0-5fe0-041d0fc548be.htm" />
+    <HelpKINode Title="constructor" Url="html/c11229d0-9f2b-e4ae-1c46-eed15cd2a8da.htm" />
+    <HelpKINode Title="methods" Url="html/9f65aec8-2d43-1ab6-6e1a-3dae30a9c110.htm" />
+    <HelpKINode Title="properties" Url="html/960263d3-b895-ef07-4c8f-893790d6a5e5.htm" />
+  </HelpKINode>
+  <HelpKINode Title="BoolInterlock.BoolInterlock constructor" Url="html/c11229d0-9f2b-e4ae-1c46-eed15cd2a8da.htm" />
+  <HelpKINode Title="BoolInterlock.Enter method" Url="html/b29ae01c-778a-f29f-6099-b7544cfe25bb.htm" />
+  <HelpKINode Title="BoolInterlock.Exit method" Url="html/1bce4ea5-fb9d-5a2a-8185-3662a2aa9435.htm" />
+  <HelpKINode Title="BoolInterlock.IsLocked property" Url="html/96249e8b-f783-40d2-3d5d-9d66f38be12c.htm" />
+  <HelpKINode Title="BoolInterlock.IsUnlocked property" Url="html/944e81a4-0859-f5f4-afc8-d67f691f2740.htm" />
+  <HelpKINode Title="BS_TX enumeration member" Url="html/2329e266-65ef-631d-378d-f1483027fec8.htm" />
+  <HelpKINode Title="BUFFER_EMPTY enumeration member" Url="html/ad358d9a-d097-8d4e-fdcb-b4fdd49acea8.htm" />
+  <HelpKINode Title="BUFFER_FULL enumeration member" Url="html/ad358d9a-d097-8d4e-fdcb-b4fdd49acea8.htm" />
+  <HelpKINode Title="BUFFER_OVERFLOW enumeration member" Url="html/ad358d9a-d097-8d4e-fdcb-b4fdd49acea8.htm" />
+  <HelpKINode Title="CAN enumeration member">
+    <HelpKINode Title="J2534Baud Enumeration" Url="html/42a255bc-9df3-4b5a-8da6-46dd932b728e.htm" />
+    <HelpKINode Title="J2534Protocol Enumeration" Url="html/27c8a39b-0ffa-c724-d6d2-7aba9b9e1d8c.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CAN_125000 enumeration member" Url="html/42a255bc-9df3-4b5a-8da6-46dd932b728e.htm" />
+  <HelpKINode Title="CAN_250000 enumeration member" Url="html/42a255bc-9df3-4b5a-8da6-46dd932b728e.htm" />
+  <HelpKINode Title="CAN_29BIT_ID enumeration member">
+    <HelpKINode Title="J2534CONNECTFLAG Enumeration" Url="html/f42f23b3-2d8d-15a4-4063-76750ac38262.htm" />
+    <HelpKINode Title="J2534RXFLAG Enumeration" Url="html/30ce74bb-a29d-dc3c-bb98-8804f6323864.htm" />
+    <HelpKINode Title="J2534TxFlag Enumeration" Url="html/1ec4e1a9-ef38-78f9-0ded-7df671c4c92f.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CAN_500000 enumeration member" Url="html/42a255bc-9df3-4b5a-8da6-46dd932b728e.htm" />
+  <HelpKINode Title="CAN_ID_BOTH enumeration member" Url="html/f42f23b3-2d8d-15a4-4063-76750ac38262.htm" />
+  <HelpKINode Title="CAN_MIXED_FORMAT enumeration member" Url="html/2329e266-65ef-631d-378d-f1483027fec8.htm" />
+  <HelpKINode Title="CHANNEL_IN_USE enumeration member" Url="html/ad358d9a-d097-8d4e-fdcb-b4fdd49acea8.htm" />
+  <HelpKINode Title="CheckDisposed method" Url="html/39d52755-a995-4eb6-28fe-3cbb6350d940.htm" />
+  <HelpKINode Title="ClearFunctMsgLookupTable method" Url="html/2f91019c-020b-5ff3-0a60-9225c19e6123.htm" />
+  <HelpKINode Title="ClearMsgFilters method" Url="html/c7aa3713-711d-fd5b-aa40-659d7107c6a4.htm" />
+  <HelpKINode Title="ClearPeriodicMsgs method" Url="html/366dd9bb-e378-699c-15e8-e4943a79014a.htm" />
+  <HelpKINode Title="ClearRxBuffer method" Url="html/18144171-08d7-3194-a07c-73f064362ece.htm" />
+  <HelpKINode Title="ClearTxBuffer method" Url="html/1c5b0b6d-0e87-6316-70ed-f5c952621c2a.htm" />
+  <HelpKINode Title="ConnectFlags property" Url="html/bb848259-fa84-7c10-e2ea-78f90095239b.htm" />
+  <HelpKINode Title="CONST class">
+    <HelpKINode Title="CONST Class" Url="html/a04fa5ee-2ce0-219b-df9e-564ba17af1af.htm" />
+    <HelpKINode Title="fields" Url="html/5cd040c1-a45b-a099-f64b-ea8148e3d88f.htm" />
+    <HelpKINode Title="properties" Url="html/fce1cda9-0025-896a-fe67-71c32f0792eb.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CONST.J2534MESSAGESIZE field" Url="html/d7b49f5a-1da6-a056-f60e-54dd4c40317b.htm" />
+  <HelpKINode Title="CONST.MAX_MESSAGES property" Url="html/d6064ef0-3bc4-d20b-f328-1c202c473040.htm" />
+  <HelpKINode Title="Data property" Url="html/99ca8b50-4b0b-0c86-a8d5-ae0209143ac5.htm" />
+  <HelpKINode Title="DATA_BITS enumeration member" Url="html/2329e266-65ef-631d-378d-f1483027fec8.htm" />
+  <HelpKINode Title="DATA_RATE enumeration member" Url="html/2329e266-65ef-631d-378d-f1483027fec8.htm" />
+  <HelpKINode Title="DefaultRxTimeout property" Url="html/f321fec3-428c-42f5-c6f1-cf163c43e593.htm" />
+  <HelpKINode Title="DefaultTxFlag property" Url="html/8fe8a341-b448-06a8-2ca2-2162d8bdb0a4.htm" />
+  <HelpKINode Title="DefaultTxTimeout property" Url="html/951b279e-895a-2e5c-8d03-d37590402be6.htm" />
+  <HelpKINode Title="DeleteFromFunctMsgLookupTable method" Url="html/392db42e-1690-3ba2-66bf-da79a3916fa2.htm" />
+  <HelpKINode Title="Details property" Url="html/2ddd6a94-b646-ed51-20e9-565afe5a9f97.htm" />
+  <HelpKINode Title="DeviceName property" Url="html/292ed96a-b3d2-59df-7be4-f767d98a85a7.htm" />
+  <HelpKINode Title="DEVICE_IN_USE enumeration member" Url="html/ad358d9a-d097-8d4e-fdcb-b4fdd49acea8.htm" />
+  <HelpKINode Title="DEVICE_NOT_CONNECTED enumeration member" Url="html/ad358d9a-d097-8d4e-fdcb-b4fdd49acea8.htm" />
+  <HelpKINode Title="Disposable class">
+    <HelpKINode Title="Disposable Class" Url="html/094ed441-3a75-4fc4-9ac7-bc01e9841c5d.htm" />
+    <HelpKINode Title="constructor" Url="html/7847f7ca-ad83-4b4c-cca3-d69c3ecaced9.htm" />
+    <HelpKINode Title="fields" Url="html/139c89a9-92f0-2077-d1d9-e186661610a3.htm" />
+    <HelpKINode Title="methods" Url="html/4926d528-69b7-708a-3209-476f7b1b1822.htm" />
+    <HelpKINode Title="properties" Url="html/be890b27-0d4d-3904-c6e8-a38944df6785.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Disposable.CheckDisposed method" Url="html/39d52755-a995-4eb6-28fe-3cbb6350d940.htm" />
+  <HelpKINode Title="Disposable.Disposable constructor" Url="html/7847f7ca-ad83-4b4c-cca3-d69c3ecaced9.htm" />
+  <HelpKINode Title="Disposable.DisposalInterlock field" Url="html/9f98b18f-88b8-1844-6160-38bbd3b50a6e.htm" />
+  <HelpKINode Title="Disposable.Dispose method" Url="html/b5ef3348-2de6-5d09-1133-0c54865b18f4.htm" />
+  <HelpKINode Title="Disposable.DisposeManaged method" Url="html/4ceed165-c215-3e19-dab7-5d7819bd39e6.htm" />
+  <HelpKINode Title="Disposable.DisposeUnmanaged method" Url="html/2cdacd99-aeff-a173-b72d-0d811510984a.htm" />
+  <HelpKINode Title="Disposable.Finalize method" Url="html/0d9c0a13-3edf-6203-1336-137621a1f37f.htm" />
+  <HelpKINode Title="Disposable.IsDisposed property" Url="html/2a12f0e8-a58b-ae99-2f97-5280c09e68bb.htm" />
+  <HelpKINode Title="DisposalInterlock field" Url="html/9f98b18f-88b8-1844-6160-38bbd3b50a6e.htm" />
+  <HelpKINode Title="Dispose method" Url="html/b5ef3348-2de6-5d09-1133-0c54865b18f4.htm" />
+  <HelpKINode Title="DisposeManaged method">
+    <HelpKINode Title="APIFactory.DisposeManaged Method " Url="html/054ef928-ef2c-c312-a664-f03608aebb06.htm" />
+    <HelpKINode Title="Disposable.DisposeManaged Method " Url="html/4ceed165-c215-3e19-dab7-5d7819bd39e6.htm" />
+    <HelpKINode Title="J2534Channel.DisposeManaged Method " Url="html/e517bee1-86bf-d609-d605-130abf8bdd9c.htm" />
+    <HelpKINode Title="J2534Device.DisposeManaged Method " Url="html/02cd0192-c3dd-15e6-c42c-24c90923f026.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DisposeUnmanaged method">
+    <HelpKINode Title="Disposable.DisposeUnmanaged Method " Url="html/2cdacd99-aeff-a173-b72d-0d811510984a.htm" />
+    <HelpKINode Title="HeapJ2534MessageArray.DisposeUnmanaged Method " Url="html/7cee9856-2de1-f529-9ae9-38ed8cd5ddb4.htm" />
+    <HelpKINode Title="J2534API.DisposeUnmanaged Method " Url="html/556ea499-b553-da92-9616-03c23ca76a23.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DrewTech_API enumeration" Url="html/9e5bbfb8-175e-44de-b153-f87c84ce22cf.htm" />
+  <HelpKINode Title="DriverVersion property" Url="html/c04dbbb6-c877-e446-addb-2a70bb88777b.htm" />
+  <HelpKINode Title="DT_ISO15765_PAD_BYTE enumeration member" Url="html/2329e266-65ef-631d-378d-f1483027fec8.htm" />
+  <HelpKINode Title="DT_ISO9141_LISTEN_L_LINE enumeration member" Url="html/f42f23b3-2d8d-15a4-4063-76750ac38262.htm" />
+  <HelpKINode Title="Enter method" Url="html/b29ae01c-778a-f29f-6099-b7544cfe25bb.htm" />
+  <HelpKINode Title="EXCEEDED_LIMIT enumeration member" Url="html/ad358d9a-d097-8d4e-fdcb-b4fdd49acea8.htm" />
+  <HelpKINode Title="Exit method" Url="html/1bce4ea5-fb9d-5a2a-8185-3662a2aa9435.htm" />
+  <HelpKINode Title="Extensions class">
+    <HelpKINode Title="Extensions Class" Url="html/037a9dba-59ee-50fb-0d9a-b9f80e980a97.htm" />
+    <HelpKINode Title="methods" Url="html/b80ccaa8-f7a6-9edc-f73e-67c49898b57f.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Extensions.GetDescription method" Url="html/c416df8e-af0c-6dc6-a564-322ecc5caad6.htm" />
+  <HelpKINode Title="Extensions.IsNotOK method" Url="html/ac113c59-ee68-9364-6d9b-c6cfd5fdb712.htm" />
+  <HelpKINode Title="Extensions.IsOK method" Url="html/2aad506f-b96a-2a6d-2ad7-09dd58de6104.htm" />
+  <HelpKINode Title="FAILED enumeration member" Url="html/ad358d9a-d097-8d4e-fdcb-b4fdd49acea8.htm" />
+  <HelpKINode Title="FastInit method" Url="html/aba964e5-d116-7d49-bc8c-b6d5df5a6f32.htm" />
+  <HelpKINode Title="Filename property" Url="html/48d7c344-80b6-6779-6de7-29946b570e86.htm" />
+  <HelpKINode Title="FilterId field" Url="html/bd8a7ec9-2b91-6305-d7f7-bda429a4316f.htm" />
+  <HelpKINode Title="FilterList property" Url="html/25bd121a-4067-3761-47b3-70506baa356e.htm" />
+  <HelpKINode Title="FilterType field" Url="html/45857c1b-84f3-0d8f-fa89-52d49b182096.htm" />
+  <HelpKINode Title="Finalize method" Url="html/0d9c0a13-3edf-6203-1336-137621a1f37f.htm" />
+  <HelpKINode Title="FirmwareVersion property" Url="html/d6330419-148f-9570-9ee4-00341e0bbc50.htm" />
+  <HelpKINode Title="FiveBaudInit method" Url="html/987ec1c2-2f69-624b-53a2-f5c715a6819a.htm" />
+  <HelpKINode Title="FIVE_BAUD_MOD enumeration member" Url="html/2329e266-65ef-631d-378d-f1483027fec8.htm" />
+  <HelpKINode Title="FlagsAsInt property" Url="html/3a2322a5-cd85-1d87-ae74-3590f15c3d4a.htm" />
+  <HelpKINode Title="FlowControl field" Url="html/3eaa66b3-0a2d-6c35-2a99-7f670f965dd4.htm" />
+  <HelpKINode Title="FLOW_CONTROL_FILTER enumeration member" Url="html/43213ec0-d48a-d023-7e0c-e3960d915386.htm" />
+  <HelpKINode Title="FreeLibrary method" Url="html/e9a189ef-05b8-612c-378b-a9a6d21db13c.htm" />
+  <HelpKINode Title="FromDataBytes method" Url="html/8cf50112-91ca-3cdc-5ef3-edc8df129b61.htm" />
+  <HelpKINode Title="FromDataBytesArray method" Url="html/10991d0f-9d7b-bcc7-2a12-8567b405465e.htm" />
+  <HelpKINode Title="FromJ2534Message method" Url="html/ed755f07-a013-284a-30ed-12eda6b71447.htm" />
+  <HelpKINode Title="FromJ2534MessageArray method" Url="html/a3cf6755-21f2-3a8c-067e-13ef71ab251c.htm" />
+  <HelpKINode Title="FUNCTION_NOT_ASSIGNED enumeration member" Url="html/ad358d9a-d097-8d4e-fdcb-b4fdd49acea8.htm" />
+  <HelpKINode Title="GetAPI method" Url="html/d9f2becb-4917-b9dd-af28-2594d44f10c6.htm" />
+  <HelpKINode Title="GetAPIList method" Url="html/de802b23-fbf0-d047-befe-162a952d35c8.htm" />
+  <HelpKINode Title="GetChannel method" Url="html/08c13747-4ee6-7004-5037-d17207beeb8b.htm" />
+  <HelpKINode Title="GetConfig method" Url="html/8acca4b5-d0eb-a8e0-6ec1-d3f8e08596bf.htm" />
+  <HelpKINode Title="GetDescription method" Url="html/c416df8e-af0c-6dc6-a564-322ecc5caad6.htm" />
+  <HelpKINode Title="GetDevice method" Url="html/ce1730a2-3057-f07d-e0ef-bfe4bc5ceb66.htm" />
+  <HelpKINode Title="GetDeviceList method" Url="html/de7f2a73-e38c-5a65-0a58-ed5b6fcc216e.htm" />
+  <HelpKINode Title="GetMessage method" Url="html/0a8652ab-4c75-7f96-b448-23044b3e554d.htm" />
+  <HelpKINode Title="GetMessageResults class">
+    <HelpKINode Title="GetMessageResults Class" Url="html/0270fe2c-2d9a-8183-b531-356d613bfd6f.htm" />
+    <HelpKINode Title="constructor" Url="html/657f0c17-0ca8-db56-52db-4df835f26b11.htm" />
+    <HelpKINode Title="methods" Url="html/f104a64d-f6c5-b16f-2fac-da78b4c8b4d3.htm" />
+    <HelpKINode Title="properties" Url="html/c5ca6638-6802-c81f-1c57-b4bedf066d13.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetMessageResults.GetMessageResults constructor" Url="html/657f0c17-0ca8-db56-52db-4df835f26b11.htm" />
+  <HelpKINode Title="GetMessageResults.Messages property" Url="html/4510c761-d240-dfdf-83ee-82471667ccf4.htm" />
+  <HelpKINode Title="GetMessageResults.Status property" Url="html/e196b02a-3464-91c2-c73f-65e4708d2409.htm" />
+  <HelpKINode Title="GetMessages method" Url="html/9facb0dd-2d80-8531-a775-6462e5c34e94.htm" />
+  <HelpKINode Title="GETNEXTCARDAQ enumeration member" Url="html/9e5bbfb8-175e-44de-b153-f87c84ce22cf.htm" />
+  <HelpKINode Title="GetNextCarDAQ method" Url="html/d880cd25-6f34-3f03-9c32-1bbfc7fa24e0.htm" />
+  <HelpKINode Title="GetNextCarDAQResults class">
+    <HelpKINode Title="GetNextCarDAQResults Class" Url="html/d423302b-9430-7c9d-8774-a111706a9654.htm" />
+    <HelpKINode Title="constructor" Url="html/ec9d9541-924d-384b-37c5-7b5e671d94bc.htm" />
+    <HelpKINode Title="methods" Url="html/ff2b4498-a033-b2b9-268c-a55871d9a7d7.htm" />
+    <HelpKINode Title="properties" Url="html/156247af-f05e-a4d9-2918-63ae76dc3263.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetNextCarDAQResults.Address property" Url="html/51258691-0aab-78ea-2855-7d09c97d6a44.htm" />
+  <HelpKINode Title="GetNextCarDAQResults.GetNextCarDAQResults constructor" Url="html/ec9d9541-924d-384b-37c5-7b5e671d94bc.htm" />
+  <HelpKINode Title="GetNextCarDAQResults.Name property" Url="html/b81deb9c-adef-43ee-7e64-20024c83ccbe.htm" />
+  <HelpKINode Title="GetNextCarDAQResults.Version property" Url="html/e3ceb257-4e50-32e6-a77e-d50d201172a6.htm" />
+  <HelpKINode Title="GetNextCarDAQ_RESET method" Url="html/7def093b-c202-419b-851f-67f2026e1a8f.htm" />
+  <HelpKINode Title="GETPOINTER enumeration member" Url="html/9e5bbfb8-175e-44de-b153-f87c84ce22cf.htm" />
+  <HelpKINode Title="GetProcAddress method" Url="html/932a55a2-c431-b977-b58b-f9c78af9893a.htm" />
+  <HelpKINode Title="HeapJ2534MessageArray class">
+    <HelpKINode Title="HeapJ2534MessageArray Class" Url="html/763f5b74-114c-62c7-f624-1a9c7746f325.htm" />
+    <HelpKINode Title="constructor" Url="html/dd43489f-f4c5-594d-1c1a-0feefe3aae5c.htm" />
+    <HelpKINode Title="fields" Url="html/4395c602-7894-e1f2-b78f-086147ec76c0.htm" />
+    <HelpKINode Title="methods" Url="html/f4fac198-dc18-5f5d-4023-ef855f5acd6f.htm" />
+    <HelpKINode Title="properties" Url="html/86c19102-8e55-1bd3-1eca-d10f0d674eb4.htm" />
+    <HelpKINode Title="type conversions" Url="html/c959d9bc-4b0c-6777-bc33-2da1b0aa9ecf.htm" />
+  </HelpKINode>
+  <HelpKINode Title="HeapJ2534MessageArray to IntPtr conversion" Url="html/8c022017-0908-b1f2-764e-2bf6050e0426.htm" />
+  <HelpKINode Title="HeapJ2534MessageArray.DisposeUnmanaged method" Url="html/7cee9856-2de1-f529-9ae9-38ed8cd5ddb4.htm" />
+  <HelpKINode Title="HeapJ2534MessageArray.FromDataBytes method" Url="html/8cf50112-91ca-3cdc-5ef3-edc8df129b61.htm" />
+  <HelpKINode Title="HeapJ2534MessageArray.FromDataBytesArray method" Url="html/10991d0f-9d7b-bcc7-2a12-8567b405465e.htm" />
+  <HelpKINode Title="HeapJ2534MessageArray.FromJ2534Message method" Url="html/ed755f07-a013-284a-30ed-12eda6b71447.htm" />
+  <HelpKINode Title="HeapJ2534MessageArray.FromJ2534MessageArray method" Url="html/a3cf6755-21f2-3a8c-067e-13ef71ab251c.htm" />
+  <HelpKINode Title="HeapJ2534MessageArray.HeapJ2534MessageArray constructor" Url="html/dd43489f-f4c5-594d-1c1a-0feefe3aae5c.htm" />
+  <HelpKINode Title="HeapJ2534MessageArray.Item property" Url="html/1ab24922-cfeb-eb89-b6ed-28331ac56d18.htm" />
+  <HelpKINode Title="HeapJ2534MessageArray.Length property" Url="html/ebacdcff-8f54-7978-db62-139b95ea8109.htm" />
+  <HelpKINode Title="HeapJ2534MessageArray.LengthPtr property" Url="html/ba9bb20d-1f5f-d6dd-ef97-8db08d2a6de1.htm" />
+  <HelpKINode Title="HeapJ2534MessageArray.MessagePtr property" Url="html/023885be-a4aa-57f9-e63e-092e27dc650f.htm" />
+  <HelpKINode Title="HeapJ2534MessageArray.Ptr property" Url="html/900cae11-f0ca-5a58-7915-2e9d3a656a22.htm" />
+  <HelpKINode Title="HeapJ2534MessageArray.ToJ2534Message method" Url="html/9abc2f49-d89d-40ea-fa00-d8a04d40a630.htm" />
+  <HelpKINode Title="HeapJ2534MessageArray.ToJ2534MessageArray method" Url="html/cff050b4-ccbe-402a-bc2b-8a69de2d8944.htm" />
+  <HelpKINode Title="INPUT_RANGE_HIGH enumeration member" Url="html/2329e266-65ef-631d-378d-f1483027fec8.htm" />
+  <HelpKINode Title="INPUT_RANGE_LOW enumeration member" Url="html/2329e266-65ef-631d-378d-f1483027fec8.htm" />
+  <HelpKINode Title="Interval property" Url="html/7259516d-45a4-5ea6-67c7-87cda5b08cab.htm" />
+  <HelpKINode Title="INVALID_BAUDRATE enumeration member" Url="html/ad358d9a-d097-8d4e-fdcb-b4fdd49acea8.htm" />
+  <HelpKINode Title="INVALID_CHANNEL_ID enumeration member" Url="html/ad358d9a-d097-8d4e-fdcb-b4fdd49acea8.htm" />
+  <HelpKINode Title="INVALID_DEVICE_ID enumeration member" Url="html/ad358d9a-d097-8d4e-fdcb-b4fdd49acea8.htm" />
+  <HelpKINode Title="INVALID_FILTER_ID enumeration member" Url="html/ad358d9a-d097-8d4e-fdcb-b4fdd49acea8.htm" />
+  <HelpKINode Title="INVALID_FLAGS enumeration member" Url="html/ad358d9a-d097-8d4e-fdcb-b4fdd49acea8.htm" />
+  <HelpKINode Title="INVALID_IOCTL_ID enumeration member" Url="html/ad358d9a-d097-8d4e-fdcb-b4fdd49acea8.htm" />
+  <HelpKINode Title="INVALID_IOCTL_VALUE enumeration member" Url="html/ad358d9a-d097-8d4e-fdcb-b4fdd49acea8.htm" />
+  <HelpKINode Title="INVALID_MSG enumeration member" Url="html/ad358d9a-d097-8d4e-fdcb-b4fdd49acea8.htm" />
+  <HelpKINode Title="INVALID_MSG_ID enumeration member" Url="html/ad358d9a-d097-8d4e-fdcb-b4fdd49acea8.htm" />
+  <HelpKINode Title="INVALID_PROTOCOL_ID enumeration member" Url="html/ad358d9a-d097-8d4e-fdcb-b4fdd49acea8.htm" />
+  <HelpKINode Title="INVALID_TIME_INTERVAL enumeration member" Url="html/ad358d9a-d097-8d4e-fdcb-b4fdd49acea8.htm" />
+  <HelpKINode Title="IsDisposed property" Url="html/2a12f0e8-a58b-ae99-2f97-5280c09e68bb.htm" />
+  <HelpKINode Title="IsLocked property" Url="html/96249e8b-f783-40d2-3d5d-9d66f38be12c.htm" />
+  <HelpKINode Title="IsNotOK method" Url="html/ac113c59-ee68-9364-6d9b-c6cfd5fdb712.htm" />
+  <HelpKINode Title="ISO14230 enumeration member">
+    <HelpKINode Title="J2534Baud Enumeration" Url="html/42a255bc-9df3-4b5a-8da6-46dd932b728e.htm" />
+    <HelpKINode Title="J2534Protocol Enumeration" Url="html/27c8a39b-0ffa-c724-d6d2-7aba9b9e1d8c.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ISO14230_10000 enumeration member" Url="html/42a255bc-9df3-4b5a-8da6-46dd932b728e.htm" />
+  <HelpKINode Title="ISO14230_10400 enumeration member" Url="html/42a255bc-9df3-4b5a-8da6-46dd932b728e.htm" />
+  <HelpKINode Title="ISO15765 enumeration member">
+    <HelpKINode Title="J2534Baud Enumeration" Url="html/42a255bc-9df3-4b5a-8da6-46dd932b728e.htm" />
+    <HelpKINode Title="J2534Protocol Enumeration" Url="html/27c8a39b-0ffa-c724-d6d2-7aba9b9e1d8c.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ISO15765_125000 enumeration member" Url="html/42a255bc-9df3-4b5a-8da6-46dd932b728e.htm" />
+  <HelpKINode Title="ISO15765_250000 enumeration member" Url="html/42a255bc-9df3-4b5a-8da6-46dd932b728e.htm" />
+  <HelpKINode Title="ISO15765_500000 enumeration member" Url="html/42a255bc-9df3-4b5a-8da6-46dd932b728e.htm" />
+  <HelpKINode Title="ISO15765_ADDR_TYPE enumeration member" Url="html/1ec4e1a9-ef38-78f9-0ded-7df671c4c92f.htm" />
+  <HelpKINode Title="ISO15765_BS enumeration member" Url="html/2329e266-65ef-631d-378d-f1483027fec8.htm" />
+  <HelpKINode Title="ISO15765_EXT_ADDR enumeration member" Url="html/30ce74bb-a29d-dc3c-bb98-8804f6323864.htm" />
+  <HelpKINode Title="ISO15765_FRAME_PAD enumeration member" Url="html/1ec4e1a9-ef38-78f9-0ded-7df671c4c92f.htm" />
+  <HelpKINode Title="ISO15765_PADDING_ERROR enumeration member" Url="html/30ce74bb-a29d-dc3c-bb98-8804f6323864.htm" />
+  <HelpKINode Title="ISO15765_SIMULTANEOUS enumeration member" Url="html/2329e266-65ef-631d-378d-f1483027fec8.htm" />
+  <HelpKINode Title="ISO15765_STMIN enumeration member" Url="html/2329e266-65ef-631d-378d-f1483027fec8.htm" />
+  <HelpKINode Title="ISO15765_WFT_MAX enumeration member" Url="html/2329e266-65ef-631d-378d-f1483027fec8.htm" />
+  <HelpKINode Title="ISO9141 enumeration member">
+    <HelpKINode Title="J2534Baud Enumeration" Url="html/42a255bc-9df3-4b5a-8da6-46dd932b728e.htm" />
+    <HelpKINode Title="J2534Protocol Enumeration" Url="html/27c8a39b-0ffa-c724-d6d2-7aba9b9e1d8c.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ISO9141_10000 enumeration member" Url="html/42a255bc-9df3-4b5a-8da6-46dd932b728e.htm" />
+  <HelpKINode Title="ISO9141_10400 enumeration member" Url="html/42a255bc-9df3-4b5a-8da6-46dd932b728e.htm" />
+  <HelpKINode Title="ISO9141_FORD_HEADER enumeration member" Url="html/f42f23b3-2d8d-15a4-4063-76750ac38262.htm" />
+  <HelpKINode Title="ISO9141_K_LINE_ONLY enumeration member" Url="html/f42f23b3-2d8d-15a4-4063-76750ac38262.htm" />
+  <HelpKINode Title="ISO9141_NO_CHECKSUM enumeration member" Url="html/f42f23b3-2d8d-15a4-4063-76750ac38262.htm" />
+  <HelpKINode Title="ISO9141_NO_CHECKSUM_DT enumeration member" Url="html/f42f23b3-2d8d-15a4-4063-76750ac38262.htm" />
+  <HelpKINode Title="IsOK method" Url="html/2aad506f-b96a-2a6d-2ad7-09dd58de6104.htm" />
+  <HelpKINode Title="IsUnlocked property" Url="html/944e81a4-0859-f5f4-afc8-d67f691f2740.htm" />
+  <HelpKINode Title="Item property" Url="html/1ab24922-cfeb-eb89-b6ed-28331ac56d18.htm" />
+  <HelpKINode Title="J1850PWM enumeration member">
+    <HelpKINode Title="J2534Baud Enumeration" Url="html/42a255bc-9df3-4b5a-8da6-46dd932b728e.htm" />
+    <HelpKINode Title="J2534Protocol Enumeration" Url="html/27c8a39b-0ffa-c724-d6d2-7aba9b9e1d8c.htm" />
+  </HelpKINode>
+  <HelpKINode Title="J1850PWM_41600 enumeration member" Url="html/42a255bc-9df3-4b5a-8da6-46dd932b728e.htm" />
+  <HelpKINode Title="J1850PWM_83200 enumeration member" Url="html/42a255bc-9df3-4b5a-8da6-46dd932b728e.htm" />
+  <HelpKINode Title="J1850VPW enumeration member">
+    <HelpKINode Title="J2534Baud Enumeration" Url="html/42a255bc-9df3-4b5a-8da6-46dd932b728e.htm" />
+    <HelpKINode Title="J2534Protocol Enumeration" Url="html/27c8a39b-0ffa-c724-d6d2-7aba9b9e1d8c.htm" />
+  </HelpKINode>
+  <HelpKINode Title="J1850VPW_10400 enumeration member" Url="html/42a255bc-9df3-4b5a-8da6-46dd932b728e.htm" />
+  <HelpKINode Title="J1850VPW_41600 enumeration member" Url="html/42a255bc-9df3-4b5a-8da6-46dd932b728e.htm" />
+  <HelpKINode Title="J1962_PINS enumeration member" Url="html/2329e266-65ef-631d-378d-f1483027fec8.htm" />
+  <HelpKINode Title="J2534 namespace" Url="html/67f8dc7a-adba-a7b5-7668-2ba00a4d7d2c.htm" />
+  <HelpKINode Title="J2534.APIFactory class" Url="html/158abcdd-018f-6953-8d5d-a3fabe6d18ed.htm" />
+  <HelpKINode Title="J2534.Common namespace" Url="html/ea38a913-a37b-75d6-6c91-49076af73cad.htm" />
+  <HelpKINode Title="J2534.Common.BoolInterlock class" Url="html/58930d2d-cf1f-51b0-5fe0-041d0fc548be.htm" />
+  <HelpKINode Title="J2534.Common.Disposable class" Url="html/094ed441-3a75-4fc4-9ac7-bc01e9841c5d.htm" />
+  <HelpKINode Title="J2534.Common.Extensions namespace" Url="html/eefc0fc9-33a3-c3d5-418b-9f4d9bc6d61f.htm" />
+  <HelpKINode Title="J2534.Common.Extensions.Extensions class" Url="html/037a9dba-59ee-50fb-0d9a-b9f80e980a97.htm" />
+  <HelpKINode Title="J2534.Common.Kernal32 class" Url="html/66c5ea99-2230-0bcc-caca-d572aafff71f.htm" />
+  <HelpKINode Title="J2534.DataClasses namespace" Url="html/2c36a821-4cd3-3bd2-cfc9-d5d11ccdfaab.htm" />
+  <HelpKINode Title="J2534.DataClasses.APIInfo class" Url="html/93a68ac4-b61c-073e-fd15-d21fad1469a3.htm" />
+  <HelpKINode Title="J2534.DataClasses.GetMessageResults class" Url="html/0270fe2c-2d9a-8183-b531-356d613bfd6f.htm" />
+  <HelpKINode Title="J2534.DataClasses.GetNextCarDAQResults class" Url="html/d423302b-9430-7c9d-8774-a111706a9654.htm" />
+  <HelpKINode Title="J2534.DataClasses.HeapJ2534MessageArray class" Url="html/763f5b74-114c-62c7-f624-1a9c7746f325.htm" />
+  <HelpKINode Title="J2534.DataClasses.J2534Exception class" Url="html/ca4aba5e-24f2-decf-c5b5-222d2d8ed9bb.htm" />
+  <HelpKINode Title="J2534.DataClasses.J2534Message class" Url="html/a065c325-10b5-ac67-10e8-8beef5974442.htm" />
+  <HelpKINode Title="J2534.DataClasses.J2534SConfig class" Url="html/69ff432c-4613-e54f-0b0d-e0913491b85f.htm" />
+  <HelpKINode Title="J2534.DataClasses.MessageFilter class" Url="html/f9a0e48d-3919-334b-412b-91f25b4903f7.htm" />
+  <HelpKINode Title="J2534.DataClasses.PeriodicMessage class" Url="html/d473b370-56a6-4c07-8580-a69c4d8c50e9.htm" />
+  <HelpKINode Title="J2534.Definitions namespace" Url="html/9d19a1f8-b021-b5ec-8b83-b68bfc5803b5.htm" />
+  <HelpKINode Title="J2534.Definitions.CONST class" Url="html/a04fa5ee-2ce0-219b-df9e-564ba17af1af.htm" />
+  <HelpKINode Title="J2534.Definitions.DrewTech_API enumeration" Url="html/9e5bbfb8-175e-44de-b153-f87c84ce22cf.htm" />
+  <HelpKINode Title="J2534.Definitions.J2534Baud enumeration" Url="html/42a255bc-9df3-4b5a-8da6-46dd932b728e.htm" />
+  <HelpKINode Title="J2534.Definitions.J2534CONNECTFLAG enumeration" Url="html/f42f23b3-2d8d-15a4-4063-76750ac38262.htm" />
+  <HelpKINode Title="J2534.Definitions.J2534Err enumeration" Url="html/ad358d9a-d097-8d4e-fdcb-b4fdd49acea8.htm" />
+  <HelpKINode Title="J2534.Definitions.J2534Filter enumeration" Url="html/43213ec0-d48a-d023-7e0c-e3960d915386.htm" />
+  <HelpKINode Title="J2534.Definitions.J2534Parameter enumeration" Url="html/2329e266-65ef-631d-378d-f1483027fec8.htm" />
+  <HelpKINode Title="J2534.Definitions.J2534Pin enumeration" Url="html/79c24fa1-2054-eeb2-3aff-92a87cd8c727.htm" />
+  <HelpKINode Title="J2534.Definitions.J2534Protocol enumeration" Url="html/27c8a39b-0ffa-c724-d6d2-7aba9b9e1d8c.htm" />
+  <HelpKINode Title="J2534.Definitions.J2534RXFLAG enumeration" Url="html/30ce74bb-a29d-dc3c-bb98-8804f6323864.htm" />
+  <HelpKINode Title="J2534.Definitions.J2534TxFlag enumeration" Url="html/1ec4e1a9-ef38-78f9-0ded-7df671c4c92f.htm" />
+  <HelpKINode Title="J2534.Definitions.UserFilterType enumeration" Url="html/6ee4f9b5-d4c0-4aae-a2e4-f750b51cf1f1.htm" />
+  <HelpKINode Title="J2534.J2534API class" Url="html/b78ceba2-beea-4f2a-4e15-1f56745e0d73.htm" />
+  <HelpKINode Title="J2534.J2534Channel class" Url="html/5aa271f5-aca1-e6b7-b532-4ee57387eea9.htm" />
+  <HelpKINode Title="J2534.J2534Device class" Url="html/aa2b9db5-b3eb-ab29-3fb7-e9f92a444bd8.htm" />
+  <HelpKINode Title="J2534API class">
+    <HelpKINode Title="J2534API Class" Url="html/b78ceba2-beea-4f2a-4e15-1f56745e0d73.htm" />
+    <HelpKINode Title="fields" Url="html/4982eccf-521f-f1f9-700e-5f02307dac90.htm" />
+    <HelpKINode Title="methods" Url="html/be58a9b8-51ab-314e-2ee9-9a32a7facf18.htm" />
+    <HelpKINode Title="properties" Url="html/5c31e254-28c5-b4ef-240f-f7a7263bfb26.htm" />
+  </HelpKINode>
+  <HelpKINode Title="J2534API.DisposeUnmanaged method" Url="html/556ea499-b553-da92-9616-03c23ca76a23.htm" />
+  <HelpKINode Title="J2534API.GetDevice method" Url="html/ce1730a2-3057-f07d-e0ef-bfe4bc5ceb66.htm" />
+  <HelpKINode Title="J2534API.GetDeviceList method" Url="html/de7f2a73-e38c-5a65-0a58-ed5b6fcc216e.htm" />
+  <HelpKINode Title="J2534API.GetNextCarDAQ method" Url="html/d880cd25-6f34-3f03-9c32-1bbfc7fa24e0.htm" />
+  <HelpKINode Title="J2534API.GetNextCarDAQ_RESET method" Url="html/7def093b-c202-419b-851f-67f2026e1a8f.htm" />
+  <HelpKINode Title="J2534Baud enumeration" Url="html/42a255bc-9df3-4b5a-8da6-46dd932b728e.htm" />
+  <HelpKINode Title="J2534Channel class">
+    <HelpKINode Title="J2534Channel Class" Url="html/5aa271f5-aca1-e6b7-b532-4ee57387eea9.htm" />
+    <HelpKINode Title="fields" Url="html/fdaf704e-b01e-a794-9cec-642bffc37189.htm" />
+    <HelpKINode Title="methods" Url="html/fff7a1a8-243b-7252-f151-ee0c7b8e5e55.htm" />
+    <HelpKINode Title="properties" Url="html/21a10432-21c1-6f9f-128e-58e7079b4268.htm" />
+  </HelpKINode>
+  <HelpKINode Title="J2534Channel.AddToFunctMsgLookupTable method" Url="html/4628589f-af2a-bb5a-05fd-f432a02e6f05.htm" />
+  <HelpKINode Title="J2534Channel.ClearFunctMsgLookupTable method" Url="html/2f91019c-020b-5ff3-0a60-9225c19e6123.htm" />
+  <HelpKINode Title="J2534Channel.ClearMsgFilters method" Url="html/c7aa3713-711d-fd5b-aa40-659d7107c6a4.htm" />
+  <HelpKINode Title="J2534Channel.ClearPeriodicMsgs method" Url="html/366dd9bb-e378-699c-15e8-e4943a79014a.htm" />
+  <HelpKINode Title="J2534Channel.ClearRxBuffer method" Url="html/18144171-08d7-3194-a07c-73f064362ece.htm" />
+  <HelpKINode Title="J2534Channel.ClearTxBuffer method" Url="html/1c5b0b6d-0e87-6316-70ed-f5c952621c2a.htm" />
+  <HelpKINode Title="J2534Channel.ConnectFlags property" Url="html/bb848259-fa84-7c10-e2ea-78f90095239b.htm" />
+  <HelpKINode Title="J2534Channel.DefaultRxTimeout property" Url="html/f321fec3-428c-42f5-c6f1-cf163c43e593.htm" />
+  <HelpKINode Title="J2534Channel.DefaultTxFlag property" Url="html/8fe8a341-b448-06a8-2ca2-2162d8bdb0a4.htm" />
+  <HelpKINode Title="J2534Channel.DefaultTxTimeout property" Url="html/951b279e-895a-2e5c-8d03-d37590402be6.htm" />
+  <HelpKINode Title="J2534Channel.DeleteFromFunctMsgLookupTable method" Url="html/392db42e-1690-3ba2-66bf-da79a3916fa2.htm" />
+  <HelpKINode Title="J2534Channel.DisposeManaged method" Url="html/e517bee1-86bf-d609-d605-130abf8bdd9c.htm" />
+  <HelpKINode Title="J2534Channel.FastInit method" Url="html/aba964e5-d116-7d49-bc8c-b6d5df5a6f32.htm" />
+  <HelpKINode Title="J2534Channel.FilterList property" Url="html/25bd121a-4067-3761-47b3-70506baa356e.htm" />
+  <HelpKINode Title="J2534Channel.FiveBaudInit method" Url="html/987ec1c2-2f69-624b-53a2-f5c715a6819a.htm" />
+  <HelpKINode Title="J2534Channel.GetConfig method" Url="html/8acca4b5-d0eb-a8e0-6ec1-d3f8e08596bf.htm" />
+  <HelpKINode Title="J2534Channel.GetMessage method" Url="html/0a8652ab-4c75-7f96-b448-23044b3e554d.htm" />
+  <HelpKINode Title="J2534Channel.GetMessages method" Url="html/9facb0dd-2d80-8531-a775-6462e5c34e94.htm" />
+  <HelpKINode Title="J2534Channel.MeasureBatteryVoltage method" Url="html/2a48bb9d-cb87-d522-67b5-6cc3c067adfb.htm" />
+  <HelpKINode Title="J2534Channel.MeasureProgrammingVoltage method" Url="html/f4aac0e0-650d-eb0f-f317-a58bc0742705.htm" />
+  <HelpKINode Title="J2534Channel.PeriodicMsgList property" Url="html/be26274c-dbf4-fd84-7708-fe917ea9b83c.htm" />
+  <HelpKINode Title="J2534Channel.ProtocolID property" Url="html/0884cc8f-baaf-2ba8-f7ce-6b38f7fc6525.htm" />
+  <HelpKINode Title="J2534Channel.SendMessage method" Url="html/51735662-f85b-144f-c757-e140a3e5525a.htm" />
+  <HelpKINode Title="J2534Channel.SendMessages method" Url="html/a97c79aa-1a28-32a8-f59b-1549ab1b1f29.htm" />
+  <HelpKINode Title="J2534Channel.SetConfig method" Url="html/9b8e4e7d-2e34-32d9-c498-bf8daaa99e6c.htm" />
+  <HelpKINode Title="J2534Channel.SetProgrammingVoltage method" Url="html/c9abc43c-3351-c9d3-9f3d-2b1f9014c73b.htm" />
+  <HelpKINode Title="J2534Channel.StartMsgFilter method" Url="html/29b72138-b15f-d363-a3be-7bf287d4f4e0.htm" />
+  <HelpKINode Title="J2534Channel.StartPeriodicMessage method" Url="html/0da91a5c-1c9f-5174-f882-68ebda97ea9c.htm" />
+  <HelpKINode Title="J2534Channel.StopMsgFilter method" Url="html/f84bcbc4-1739-3da9-6f75-58f3e711fcde.htm" />
+  <HelpKINode Title="J2534Channel.StopPeriodicMsg method" Url="html/1bbb2487-3954-c7be-4321-c82b505aa74c.htm" />
+  <HelpKINode Title="J2534CONNECTFLAG enumeration" Url="html/f42f23b3-2d8d-15a4-4063-76750ac38262.htm" />
+  <HelpKINode Title="J2534Device class">
+    <HelpKINode Title="J2534Device Class" Url="html/aa2b9db5-b3eb-ab29-3fb7-e9f92a444bd8.htm" />
+    <HelpKINode Title="fields" Url="html/33e1f2e0-7076-f3fc-8c6a-7fca0b2e84ac.htm" />
+    <HelpKINode Title="methods" Url="html/754d102e-7bbb-7851-e269-612e62180e96.htm" />
+    <HelpKINode Title="properties" Url="html/950802f4-47f3-cbed-8e98-3fd8ae98a729.htm" />
+  </HelpKINode>
+  <HelpKINode Title="J2534Device.APIVersion property" Url="html/2562233f-a9a6-9203-2183-07b6ed7a3364.htm" />
+  <HelpKINode Title="J2534Device.DeviceName property" Url="html/292ed96a-b3d2-59df-7be4-f767d98a85a7.htm" />
+  <HelpKINode Title="J2534Device.DisposeManaged method" Url="html/02cd0192-c3dd-15e6-c42c-24c90923f026.htm" />
+  <HelpKINode Title="J2534Device.DriverVersion property" Url="html/c04dbbb6-c877-e446-addb-2a70bb88777b.htm" />
+  <HelpKINode Title="J2534Device.FirmwareVersion property" Url="html/d6330419-148f-9570-9ee4-00341e0bbc50.htm" />
+  <HelpKINode Title="J2534Device.GetChannel method" Url="html/08c13747-4ee6-7004-5037-d17207beeb8b.htm" />
+  <HelpKINode Title="J2534Device.MeasureBatteryVoltage method" Url="html/100360ad-c788-f787-ee44-0e68d3847d1b.htm" />
+  <HelpKINode Title="J2534Device.MeasureProgrammingVoltage method" Url="html/76b43f21-db08-bf5c-28d5-86262f0ab6ac.htm" />
+  <HelpKINode Title="J2534Device.SetProgrammingVoltage method" Url="html/826efdc0-c818-8987-2ed2-5cdde600a94c.htm" />
+  <HelpKINode Title="J2534Err enumeration" Url="html/ad358d9a-d097-8d4e-fdcb-b4fdd49acea8.htm" />
+  <HelpKINode Title="J2534Exception class">
+    <HelpKINode Title="J2534Exception Class" Url="html/ca4aba5e-24f2-decf-c5b5-222d2d8ed9bb.htm" />
+    <HelpKINode Title="constructor" Url="html/82bc2646-fa2c-4ae5-0bc7-6d7db3d9b389.htm" />
+    <HelpKINode Title="events" Url="html/db59fa86-8f7f-cda9-d55d-3f2087d50ceb.htm" />
+    <HelpKINode Title="methods" Url="html/e01e8d44-c75e-604a-498d-9b9c9e741ea3.htm" />
+    <HelpKINode Title="properties" Url="html/9d91b4ec-88c2-6e25-5cb9-4cbe8ed6de0e.htm" />
+  </HelpKINode>
+  <HelpKINode Title="J2534Exception.AdditionalDescription property" Url="html/e82efaf5-c1ea-1c21-1668-6adfcdf61fa7.htm" />
+  <HelpKINode Title="J2534Exception.J2534Exception constructor" Url="html/82bc2646-fa2c-4ae5-0bc7-6d7db3d9b389.htm" />
+  <HelpKINode Title="J2534Exception.Message property" Url="html/4a698870-d547-a6c0-6fd1-67d04d4d0d02.htm" />
+  <HelpKINode Title="J2534Exception.Status property" Url="html/6de750da-bd3e-309e-17ea-5a9f44737e0b.htm" />
+  <HelpKINode Title="J2534Exception.StatusDescription property" Url="html/eb199846-3c73-0e6a-fea7-0b333b834c5e.htm" />
+  <HelpKINode Title="J2534Filter enumeration" Url="html/43213ec0-d48a-d023-7e0c-e3960d915386.htm" />
+  <HelpKINode Title="J2534Message class">
+    <HelpKINode Title="J2534Message Class" Url="html/a065c325-10b5-ac67-10e8-8beef5974442.htm" />
+    <HelpKINode Title="constructor" Url="html/576f05f8-caa9-72bc-3f9d-6427ac6629c2.htm" />
+    <HelpKINode Title="methods" Url="html/c6611a28-f6b0-64ef-be93-ce245d99a02c.htm" />
+    <HelpKINode Title="properties" Url="html/57c03a27-2387-e6f8-84c5-499e01f23990.htm" />
+  </HelpKINode>
+  <HelpKINode Title="J2534Message.Data property" Url="html/99ca8b50-4b0b-0c86-a8d5-ae0209143ac5.htm" />
+  <HelpKINode Title="J2534Message.FlagsAsInt property" Url="html/3a2322a5-cd85-1d87-ae74-3590f15c3d4a.htm" />
+  <HelpKINode Title="J2534Message.J2534Message constructor" Url="html/576f05f8-caa9-72bc-3f9d-6427ac6629c2.htm" />
+  <HelpKINode Title="J2534Message.RxStatus property" Url="html/cf011486-1f24-4249-4dd8-1fdc69cebc25.htm" />
+  <HelpKINode Title="J2534Message.Timestamp property" Url="html/59a3f27d-64d1-422b-0d39-2e710e0399d6.htm" />
+  <HelpKINode Title="J2534Message.TxFlags property" Url="html/0fcbcf8f-159d-d511-7073-b99ad4cfcfc4.htm" />
+  <HelpKINode Title="J2534MESSAGESIZE field" Url="html/d7b49f5a-1da6-a056-f60e-54dd4c40317b.htm" />
+  <HelpKINode Title="J2534Parameter enumeration" Url="html/2329e266-65ef-631d-378d-f1483027fec8.htm" />
+  <HelpKINode Title="J2534Pin enumeration" Url="html/79c24fa1-2054-eeb2-3aff-92a87cd8c727.htm" />
+  <HelpKINode Title="J2534Protocol enumeration" Url="html/27c8a39b-0ffa-c724-d6d2-7aba9b9e1d8c.htm" />
+  <HelpKINode Title="J2534RXFLAG enumeration" Url="html/30ce74bb-a29d-dc3c-bb98-8804f6323864.htm" />
+  <HelpKINode Title="J2534SConfig class">
+    <HelpKINode Title="J2534SConfig Class" Url="html/69ff432c-4613-e54f-0b0d-e0913491b85f.htm" />
+    <HelpKINode Title="constructor" Url="html/e0fdd8f5-7b62-c5f4-9bf3-b3994575467f.htm" />
+    <HelpKINode Title="fields" Url="html/c2b58f3d-b773-27cf-0120-05be398cfc9f.htm" />
+    <HelpKINode Title="methods" Url="html/602da378-84bf-86a3-28a7-063de50a3378.htm" />
+  </HelpKINode>
+  <HelpKINode Title="J2534SConfig.J2534SConfig constructor" Url="html/e0fdd8f5-7b62-c5f4-9bf3-b3994575467f.htm" />
+  <HelpKINode Title="J2534SConfig.Parameter field" Url="html/1a30cd53-b745-1b87-b29b-453dfdf71a7d.htm" />
+  <HelpKINode Title="J2534SConfig.Value field" Url="html/7af41eb7-6d6e-9e5e-adfa-ec2b3873100e.htm" />
+  <HelpKINode Title="J2534TxFlag enumeration" Url="html/1ec4e1a9-ef38-78f9-0ded-7df671c4c92f.htm" />
+  <HelpKINode Title="Kernal32 class">
+    <HelpKINode Title="Kernal32 Class" Url="html/66c5ea99-2230-0bcc-caca-d572aafff71f.htm" />
+    <HelpKINode Title="methods" Url="html/4341b8ae-ee1c-c004-1316-788c19fdc1a7.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Kernal32.FreeLibrary method" Url="html/e9a189ef-05b8-612c-378b-a9a6d21db13c.htm" />
+  <HelpKINode Title="Kernal32.GetProcAddress method" Url="html/932a55a2-c431-b977-b58b-f9c78af9893a.htm" />
+  <HelpKINode Title="Kernal32.LoadLibrary method" Url="html/abc4d50e-a139-7f20-77d9-1461ce595f24.htm" />
+  <HelpKINode Title="Length property" Url="html/ebacdcff-8f54-7978-db62-139b95ea8109.htm" />
+  <HelpKINode Title="LengthPtr property" Url="html/ba9bb20d-1f5f-d6dd-ef97-8db08d2a6de1.htm" />
+  <HelpKINode Title="LOADFIRMWARE enumeration member" Url="html/9e5bbfb8-175e-44de-b153-f87c84ce22cf.htm" />
+  <HelpKINode Title="LoadLibrary method" Url="html/abc4d50e-a139-7f20-77d9-1461ce595f24.htm" />
+  <HelpKINode Title="LOOP_BACK enumeration member" Url="html/2329e266-65ef-631d-378d-f1483027fec8.htm" />
+  <HelpKINode Title="Mask field" Url="html/c814da14-8d24-4927-ccf2-d9c9d49f158b.htm" />
+  <HelpKINode Title="MAX_MESSAGES property" Url="html/d6064ef0-3bc4-d20b-f328-1c202c473040.htm" />
+  <HelpKINode Title="MeasureBatteryVoltage method">
+    <HelpKINode Title="J2534Channel.MeasureBatteryVoltage Method " Url="html/2a48bb9d-cb87-d522-67b5-6cc3c067adfb.htm" />
+    <HelpKINode Title="J2534Device.MeasureBatteryVoltage Method " Url="html/100360ad-c788-f787-ee44-0e68d3847d1b.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MeasureProgrammingVoltage method">
+    <HelpKINode Title="J2534Channel.MeasureProgrammingVoltage Method " Url="html/f4aac0e0-650d-eb0f-f317-a58bc0742705.htm" />
+    <HelpKINode Title="J2534Device.MeasureProgrammingVoltage Method " Url="html/76b43f21-db08-bf5c-28d5-86262f0ab6ac.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Message property" Url="html/4a698870-d547-a6c0-6fd1-67d04d4d0d02.htm" />
+  <HelpKINode Title="MessageFilter class">
+    <HelpKINode Title="MessageFilter Class" Url="html/f9a0e48d-3919-334b-412b-91f25b4903f7.htm" />
+    <HelpKINode Title="constructor" Url="html/b2c5fb61-bc3d-6e04-a706-36c74b6c05b2.htm" />
+    <HelpKINode Title="fields" Url="html/a76355b9-6631-b3e9-8ba8-c61dc1d6e469.htm" />
+    <HelpKINode Title="methods" Url="html/3e84e769-b3ee-14e9-c1cb-3dc93d285c3e.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MessageFilter.Block method" Url="html/39cd5205-f601-625f-9175-cc124b2f4eb7.htm" />
+  <HelpKINode Title="MessageFilter.FilterId field" Url="html/bd8a7ec9-2b91-6305-d7f7-bda429a4316f.htm" />
+  <HelpKINode Title="MessageFilter.FilterType field" Url="html/45857c1b-84f3-0d8f-fa89-52d49b182096.htm" />
+  <HelpKINode Title="MessageFilter.FlowControl field" Url="html/3eaa66b3-0a2d-6c35-2a99-7f670f965dd4.htm" />
+  <HelpKINode Title="MessageFilter.Mask field" Url="html/c814da14-8d24-4927-ccf2-d9c9d49f158b.htm" />
+  <HelpKINode Title="MessageFilter.MessageFilter constructor" Url="html/b2c5fb61-bc3d-6e04-a706-36c74b6c05b2.htm" />
+  <HelpKINode Title="MessageFilter.Pass method" Url="html/462c3c7e-bc2d-ee9a-a31c-ed6deb3ea6d9.htm" />
+  <HelpKINode Title="MessageFilter.PassAll method" Url="html/51c331cf-567d-6584-495c-d69a41920141.htm" />
+  <HelpKINode Title="MessageFilter.Pattern field" Url="html/f3d678ba-a265-41a8-b9dc-43a15a066d84.htm" />
+  <HelpKINode Title="MessageFilter.StandardISO15765 method" Url="html/cf6d3f1e-06b8-9ff7-ce05-abf3b9bafe48.htm" />
+  <HelpKINode Title="MessageFilter.TxFlags field" Url="html/190f2a4e-8224-fe0a-b4e7-c287cd323c5f.htm" />
+  <HelpKINode Title="MessageID property" Url="html/a2532fce-d66a-2ff9-3ef6-88e9e03353bc.htm" />
+  <HelpKINode Title="MessagePtr property" Url="html/023885be-a4aa-57f9-e63e-092e27dc650f.htm" />
+  <HelpKINode Title="Messages property" Url="html/4510c761-d240-dfdf-83ee-82471667ccf4.htm" />
+  <HelpKINode Title="MSG_PROTOCOL_ID enumeration member" Url="html/ad358d9a-d097-8d4e-fdcb-b4fdd49acea8.htm" />
+  <HelpKINode Title="Name property">
+    <HelpKINode Title="APIInfo.Name Property " Url="html/fbcc464c-44d9-61b0-3374-df03a4063fe8.htm" />
+    <HelpKINode Title="GetNextCarDAQResults.Name Property " Url="html/b81deb9c-adef-43ee-7e64-20024c83ccbe.htm" />
+  </HelpKINode>
+  <HelpKINode Title="NETWORK_LINE enumeration member" Url="html/2329e266-65ef-631d-378d-f1483027fec8.htm" />
+  <HelpKINode Title="NODE_ADDRESS enumeration member" Url="html/2329e266-65ef-631d-378d-f1483027fec8.htm" />
+  <HelpKINode Title="NONE enumeration member">
+    <HelpKINode Title="DrewTech_API Enumeration" Url="html/9e5bbfb8-175e-44de-b153-f87c84ce22cf.htm" />
+    <HelpKINode Title="J2534CONNECTFLAG Enumeration" Url="html/f42f23b3-2d8d-15a4-4063-76750ac38262.htm" />
+    <HelpKINode Title="J2534RXFLAG Enumeration" Url="html/30ce74bb-a29d-dc3c-bb98-8804f6323864.htm" />
+    <HelpKINode Title="J2534TxFlag Enumeration" Url="html/1ec4e1a9-ef38-78f9-0ded-7df671c4c92f.htm" />
+    <HelpKINode Title="UserFilterType Enumeration" Url="html/6ee4f9b5-d4c0-4aae-a2e4-f750b51cf1f1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="NOT_SUPPORTED enumeration member" Url="html/ad358d9a-d097-8d4e-fdcb-b4fdd49acea8.htm" />
+  <HelpKINode Title="NOT_UNIQUE enumeration member" Url="html/ad358d9a-d097-8d4e-fdcb-b4fdd49acea8.htm" />
+  <HelpKINode Title="NO_FLOW_CONTROL enumeration member" Url="html/ad358d9a-d097-8d4e-fdcb-b4fdd49acea8.htm" />
+  <HelpKINode Title="NULL_PARAMETER enumeration member" Url="html/ad358d9a-d097-8d4e-fdcb-b4fdd49acea8.htm" />
+  <HelpKINode Title="P1_MAX enumeration member" Url="html/2329e266-65ef-631d-378d-f1483027fec8.htm" />
+  <HelpKINode Title="P1_MIN enumeration member" Url="html/2329e266-65ef-631d-378d-f1483027fec8.htm" />
+  <HelpKINode Title="P2_MAX enumeration member" Url="html/2329e266-65ef-631d-378d-f1483027fec8.htm" />
+  <HelpKINode Title="P2_MIN enumeration member" Url="html/2329e266-65ef-631d-378d-f1483027fec8.htm" />
+  <HelpKINode Title="P3_MAX enumeration member" Url="html/2329e266-65ef-631d-378d-f1483027fec8.htm" />
+  <HelpKINode Title="P3_MIN enumeration member" Url="html/2329e266-65ef-631d-378d-f1483027fec8.htm" />
+  <HelpKINode Title="P4_MAX enumeration member" Url="html/2329e266-65ef-631d-378d-f1483027fec8.htm" />
+  <HelpKINode Title="P4_MIN enumeration member" Url="html/2329e266-65ef-631d-378d-f1483027fec8.htm" />
+  <HelpKINode Title="Parameter field" Url="html/1a30cd53-b745-1b87-b29b-453dfdf71a7d.htm" />
+  <HelpKINode Title="PARITY enumeration member" Url="html/2329e266-65ef-631d-378d-f1483027fec8.htm" />
+  <HelpKINode Title="PASS enumeration member" Url="html/6ee4f9b5-d4c0-4aae-a2e4-f750b51cf1f1.htm" />
+  <HelpKINode Title="Pass method" Url="html/462c3c7e-bc2d-ee9a-a31c-ed6deb3ea6d9.htm" />
+  <HelpKINode Title="PASSALL enumeration member" Url="html/6ee4f9b5-d4c0-4aae-a2e4-f750b51cf1f1.htm" />
+  <HelpKINode Title="PassAll method" Url="html/51c331cf-567d-6584-495c-d69a41920141.htm" />
+  <HelpKINode Title="PASS_FILTER enumeration member" Url="html/43213ec0-d48a-d023-7e0c-e3960d915386.htm" />
+  <HelpKINode Title="Pattern field" Url="html/f3d678ba-a265-41a8-b9dc-43a15a066d84.htm" />
+  <HelpKINode Title="PeriodicMessage class">
+    <HelpKINode Title="PeriodicMessage Class" Url="html/d473b370-56a6-4c07-8580-a69c4d8c50e9.htm" />
+    <HelpKINode Title="constructor" Url="html/b6c4949f-0100-76fb-0c72-43207a175d87.htm" />
+    <HelpKINode Title="methods" Url="html/16ece07f-798b-7893-4488-0bb3d5ee28a3.htm" />
+    <HelpKINode Title="properties" Url="html/5c99bb74-31fb-4431-4afd-95f1ea283cc1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="PeriodicMessage.Interval property" Url="html/7259516d-45a4-5ea6-67c7-87cda5b08cab.htm" />
+  <HelpKINode Title="PeriodicMessage.MessageID property" Url="html/a2532fce-d66a-2ff9-3ef6-88e9e03353bc.htm" />
+  <HelpKINode Title="PeriodicMessage.PeriodicMessage constructor" Url="html/b6c4949f-0100-76fb-0c72-43207a175d87.htm" />
+  <HelpKINode Title="PeriodicMsgList property" Url="html/be26274c-dbf4-fd84-7708-fe917ea9b83c.htm" />
+  <HelpKINode Title="PIN_11 enumeration member" Url="html/79c24fa1-2054-eeb2-3aff-92a87cd8c727.htm" />
+  <HelpKINode Title="PIN_12 enumeration member" Url="html/79c24fa1-2054-eeb2-3aff-92a87cd8c727.htm" />
+  <HelpKINode Title="PIN_13 enumeration member" Url="html/79c24fa1-2054-eeb2-3aff-92a87cd8c727.htm" />
+  <HelpKINode Title="PIN_14 enumeration member" Url="html/79c24fa1-2054-eeb2-3aff-92a87cd8c727.htm" />
+  <HelpKINode Title="PIN_15 enumeration member" Url="html/79c24fa1-2054-eeb2-3aff-92a87cd8c727.htm" />
+  <HelpKINode Title="PIN_6 enumeration member" Url="html/79c24fa1-2054-eeb2-3aff-92a87cd8c727.htm" />
+  <HelpKINode Title="PIN_9 enumeration member" Url="html/79c24fa1-2054-eeb2-3aff-92a87cd8c727.htm" />
+  <HelpKINode Title="PIN_INVALID enumeration member" Url="html/ad358d9a-d097-8d4e-fdcb-b4fdd49acea8.htm" />
+  <HelpKINode Title="ProtocolID property" Url="html/0884cc8f-baaf-2ba8-f7ce-6b38f7fc6525.htm" />
+  <HelpKINode Title="Ptr property" Url="html/900cae11-f0ca-5a58-7915-2e9d3a656a22.htm" />
+  <HelpKINode Title="READINGS_PER_MSG enumeration member" Url="html/2329e266-65ef-631d-378d-f1483027fec8.htm" />
+  <HelpKINode Title="READIPSETUP enumeration member" Url="html/9e5bbfb8-175e-44de-b153-f87c84ce22cf.htm" />
+  <HelpKINode Title="READPCSETUP enumeration member" Url="html/9e5bbfb8-175e-44de-b153-f87c84ce22cf.htm" />
+  <HelpKINode Title="RECOVERFIRMWARE enumeration member" Url="html/9e5bbfb8-175e-44de-b153-f87c84ce22cf.htm" />
+  <HelpKINode Title="RxStatus property" Url="html/cf011486-1f24-4249-4dd8-1fdc69cebc25.htm" />
+  <HelpKINode Title="RX_BREAK enumeration member" Url="html/30ce74bb-a29d-dc3c-bb98-8804f6323864.htm" />
+  <HelpKINode Title="SAMPLES_PER_READING enumeration member" Url="html/2329e266-65ef-631d-378d-f1483027fec8.htm" />
+  <HelpKINode Title="SAMPLE_RATE enumeration member" Url="html/2329e266-65ef-631d-378d-f1483027fec8.htm" />
+  <HelpKINode Title="SAMPLE_RESOLUTION enumeration member" Url="html/2329e266-65ef-631d-378d-f1483027fec8.htm" />
+  <HelpKINode Title="SCI_62500 enumeration member" Url="html/42a255bc-9df3-4b5a-8da6-46dd932b728e.htm" />
+  <HelpKINode Title="SCI_7812 enumeration member" Url="html/42a255bc-9df3-4b5a-8da6-46dd932b728e.htm" />
+  <HelpKINode Title="SCI_A_ENGINE enumeration member" Url="html/27c8a39b-0ffa-c724-d6d2-7aba9b9e1d8c.htm" />
+  <HelpKINode Title="SCI_A_TRANS enumeration member" Url="html/27c8a39b-0ffa-c724-d6d2-7aba9b9e1d8c.htm" />
+  <HelpKINode Title="SCI_B_ENGINE enumeration member" Url="html/27c8a39b-0ffa-c724-d6d2-7aba9b9e1d8c.htm" />
+  <HelpKINode Title="SCI_B_TRANS enumeration member" Url="html/27c8a39b-0ffa-c724-d6d2-7aba9b9e1d8c.htm" />
+  <HelpKINode Title="SCI_MODE enumeration member" Url="html/1ec4e1a9-ef38-78f9-0ded-7df671c4c92f.htm" />
+  <HelpKINode Title="SCI_TX_VOLTAGE enumeration member" Url="html/1ec4e1a9-ef38-78f9-0ded-7df671c4c92f.htm" />
+  <HelpKINode Title="SendMessage method" Url="html/51735662-f85b-144f-c757-e140a3e5525a.htm" />
+  <HelpKINode Title="SendMessages method" Url="html/a97c79aa-1a28-32a8-f59b-1549ab1b1f29.htm" />
+  <HelpKINode Title="SetConfig method" Url="html/9b8e4e7d-2e34-32d9-c498-bf8daaa99e6c.htm" />
+  <HelpKINode Title="SetProgrammingVoltage method">
+    <HelpKINode Title="J2534Channel.SetProgrammingVoltage Method " Url="html/c9abc43c-3351-c9d3-9f3d-2b1f9014c73b.htm" />
+    <HelpKINode Title="J2534Device.SetProgrammingVoltage Method " Url="html/826efdc0-c818-8987-2ed2-5cdde600a94c.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SNIFF_MODE enumeration member" Url="html/f42f23b3-2d8d-15a4-4063-76750ac38262.htm" />
+  <HelpKINode Title="STANDARDISO15765 enumeration member" Url="html/6ee4f9b5-d4c0-4aae-a2e4-f750b51cf1f1.htm" />
+  <HelpKINode Title="StandardISO15765 method" Url="html/cf6d3f1e-06b8-9ff7-ce05-abf3b9bafe48.htm" />
+  <HelpKINode Title="StartMsgFilter method" Url="html/29b72138-b15f-d363-a3be-7bf287d4f4e0.htm" />
+  <HelpKINode Title="StartPeriodicMessage method" Url="html/0da91a5c-1c9f-5174-f882-68ebda97ea9c.htm" />
+  <HelpKINode Title="START_OF_MESSAGE enumeration member" Url="html/30ce74bb-a29d-dc3c-bb98-8804f6323864.htm" />
+  <HelpKINode Title="Status property">
+    <HelpKINode Title="GetMessageResults.Status Property " Url="html/e196b02a-3464-91c2-c73f-65e4708d2409.htm" />
+    <HelpKINode Title="J2534Exception.Status Property " Url="html/6de750da-bd3e-309e-17ea-5a9f44737e0b.htm" />
+  </HelpKINode>
+  <HelpKINode Title="StatusDescription property" Url="html/eb199846-3c73-0e6a-fea7-0b333b834c5e.htm" />
+  <HelpKINode Title="STATUS_NOERROR enumeration member" Url="html/ad358d9a-d097-8d4e-fdcb-b4fdd49acea8.htm" />
+  <HelpKINode Title="STMIN_TX enumeration member" Url="html/2329e266-65ef-631d-378d-f1483027fec8.htm" />
+  <HelpKINode Title="StopMsgFilter method" Url="html/f84bcbc4-1739-3da9-6f75-58f3e711fcde.htm" />
+  <HelpKINode Title="StopPeriodicMsg method" Url="html/1bbb2487-3954-c7be-4321-c82b505aa74c.htm" />
+  <HelpKINode Title="SW_CAN_HS_DATA_RATE enumeration member" Url="html/2329e266-65ef-631d-378d-f1483027fec8.htm" />
+  <HelpKINode Title="SW_CAN_RES_SWITCH enumeration member" Url="html/2329e266-65ef-631d-378d-f1483027fec8.htm" />
+  <HelpKINode Title="SW_CAN_SPEEDCHANGE_ENABLE enumeration member" Url="html/2329e266-65ef-631d-378d-f1483027fec8.htm" />
+  <HelpKINode Title="SYNC_JUMP_WIDTH enumeration member" Url="html/2329e266-65ef-631d-378d-f1483027fec8.htm" />
+  <HelpKINode Title="T1_MAX enumeration member" Url="html/2329e266-65ef-631d-378d-f1483027fec8.htm" />
+  <HelpKINode Title="T2_MAX enumeration member" Url="html/2329e266-65ef-631d-378d-f1483027fec8.htm" />
+  <HelpKINode Title="T3_MAX enumeration member" Url="html/2329e266-65ef-631d-378d-f1483027fec8.htm" />
+  <HelpKINode Title="T4_MAX enumeration member" Url="html/2329e266-65ef-631d-378d-f1483027fec8.htm" />
+  <HelpKINode Title="T5_MAX enumeration member" Url="html/2329e266-65ef-631d-378d-f1483027fec8.htm" />
+  <HelpKINode Title="TIDLE enumeration member" Url="html/2329e266-65ef-631d-378d-f1483027fec8.htm" />
+  <HelpKINode Title="TIMEOUT enumeration member" Url="html/ad358d9a-d097-8d4e-fdcb-b4fdd49acea8.htm" />
+  <HelpKINode Title="Timestamp property" Url="html/59a3f27d-64d1-422b-0d39-2e710e0399d6.htm" />
+  <HelpKINode Title="TINIL enumeration member" Url="html/2329e266-65ef-631d-378d-f1483027fec8.htm" />
+  <HelpKINode Title="ToJ2534Message method" Url="html/9abc2f49-d89d-40ea-fa00-d8a04d40a630.htm" />
+  <HelpKINode Title="ToJ2534MessageArray method" Url="html/cff050b4-ccbe-402a-bc2b-8a69de2d8944.htm" />
+  <HelpKINode Title="TWUP enumeration member" Url="html/2329e266-65ef-631d-378d-f1483027fec8.htm" />
+  <HelpKINode Title="TxFlags field" Url="html/190f2a4e-8224-fe0a-b4e7-c287cd323c5f.htm" />
+  <HelpKINode Title="TxFlags property" Url="html/0fcbcf8f-159d-d511-7073-b99ad4cfcfc4.htm" />
+  <HelpKINode Title="TX_INDICATION enumeration member" Url="html/30ce74bb-a29d-dc3c-bb98-8804f6323864.htm" />
+  <HelpKINode Title="TX_MSG_TYPE enumeration member" Url="html/30ce74bb-a29d-dc3c-bb98-8804f6323864.htm" />
+  <HelpKINode Title="UserFilterType enumeration" Url="html/6ee4f9b5-d4c0-4aae-a2e4-f750b51cf1f1.htm" />
+  <HelpKINode Title="Value field" Url="html/7af41eb7-6d6e-9e5e-adfa-ec2b3873100e.htm" />
+  <HelpKINode Title="Version property" Url="html/e3ceb257-4e50-32e6-a77e-d50d201172a6.htm" />
+  <HelpKINode Title="W0 enumeration member" Url="html/2329e266-65ef-631d-378d-f1483027fec8.htm" />
+  <HelpKINode Title="W1 enumeration member" Url="html/2329e266-65ef-631d-378d-f1483027fec8.htm" />
+  <HelpKINode Title="W2 enumeration member" Url="html/2329e266-65ef-631d-378d-f1483027fec8.htm" />
+  <HelpKINode Title="W3 enumeration member" Url="html/2329e266-65ef-631d-378d-f1483027fec8.htm" />
+  <HelpKINode Title="W4 enumeration member" Url="html/2329e266-65ef-631d-378d-f1483027fec8.htm" />
+  <HelpKINode Title="W5 enumeration member" Url="html/2329e266-65ef-631d-378d-f1483027fec8.htm" />
+  <HelpKINode Title="WAIT_P3_MIN_ONLY enumeration member" Url="html/1ec4e1a9-ef38-78f9-0ded-7df671c4c92f.htm" />
+  <HelpKINode Title="WRITEIPSETUP enumeration member" Url="html/9e5bbfb8-175e-44de-b153-f87c84ce22cf.htm" />
+</HelpKI>

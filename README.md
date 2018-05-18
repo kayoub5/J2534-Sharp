@@ -8,12 +8,12 @@ Available on NuGet! [NuGet Gallery: J2534-Sharp]
 - No 'Unsafe' code.  All unmanaged memory references are done using the marshaller
 - Thread safe design.   Locking is done on API calls to allow concurrent access.
 - Simplified API.  Most API calls have had redundant data removed and offer method signatures for common use cases
-- Support for v2.02 and v4.04 J2534 standards.  v2.02 librarys are detected and 'shimmed' to a v4.04 interface seamlessly
+- Support for v2.02 and v4.04 J2534 standards.  v2.02 libraries are detected and 'shimmed' to a v4.04 interface seamlessly
 - Support for v5.00.  v5 J2534 support has been started, but I need more info to complete it.
 - Support for DrewTech API.  Support has been included for undocumented DrewTech API calls
 
 ## TODO's ##
-- Merge the namespaces to just 'J2534'.  The namespace division seems to cause more clutter than it solves
+- Merge the name-spaces to just 'J2534'.  The name-space division seems to cause more clutter than it solves
 - Test the FivebaudInit and Fastinit methods.
 - Test with an actual v2.02 driver.
 - Finish the v5.00 implementation (can anyone send me the spec please??!!)
@@ -96,7 +96,7 @@ namespace J5234Examples
 ```
 
 ## Alternate usage of the APIFactory ##
-Alternately, the API factory can be instanciated as an instance, and when disposed, will dispose all children with it.  This negates the need for explicit using's'
+Alternately, the API factory can be instantiated as an instance, and when disposed, will dispose all children with it.  This negates the need for explicit using's'
 except for the initial one for the APIFactory.  NOTE:  The APIFactory instance is only used to facilitate the disposal, and the instance does not need to be passed
 around.
 ```csharp

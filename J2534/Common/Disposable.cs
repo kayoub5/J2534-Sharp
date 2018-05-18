@@ -28,7 +28,7 @@ namespace J2534.Common
     {
         internal delegate void DisposePrototype();
         internal event DisposePrototype OnDisposing;
-        protected BoolInterlock DisposalInterlock = new BoolInterlock();
+        private BoolInterlock DisposalInterlock = new BoolInterlock();
         public bool IsDisposed
         {
             get { return DisposalInterlock.IsLocked; }
@@ -67,7 +67,7 @@ namespace J2534.Common
             {
                 Dispose(false);
             }
-            catch (Exception exception)
+            catch //(Exception exception)
             {
                 try
                 {

@@ -413,7 +413,7 @@ namespace J2534
             }
         }
         /// <summary>
-        /// Performs a fast initialzation sequence
+        /// Performs a fast initialization sequence
         /// </summary>
         /// <param name="TxMessage"></param>
         /// <returns></returns>
