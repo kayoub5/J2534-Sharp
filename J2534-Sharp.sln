@@ -12,7 +12,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{7CF6DF6D-3B04-46F8-A40B-537D21BCA0B4}") = "J2534-Sharp", "Src\J2534-Sharp.shfbproj", "{8F9583A5-6806-4539-A791-FF765DAC9184}"
+Project("{7CF6DF6D-3B04-46F8-A40B-537D21BCA0B4}") = "J2534-Sharp-DOCO", "Src\J2534-Sharp-DOCO.shfbproj", "{8F9583A5-6806-4539-A791-FF765DAC9184}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D99E0DE7-2F06-41E3-B33E-687E1B425A7F} = {D99E0DE7-2F06-41E3-B33E-687E1B425A7F}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
