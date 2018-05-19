@@ -23,6 +23,7 @@ This project is very active and still somewhat fluid.  Breaking changes may occu
 ## Feedback ##
 I want to hear from you if you have ideas or thoughts about this library.  Anything from features to critiques are welcome.  Also, I would love to know what kinds of things its being used for!
 
+## Usage Paradigm ##
 ## Traditional usage ##
 The traditional usage will use explicit filter definition and using disposables within using's'.
 ```csharp
