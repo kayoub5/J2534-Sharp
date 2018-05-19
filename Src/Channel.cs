@@ -26,7 +26,7 @@ using System.Linq;
 
 namespace SAE.J2534
 {
-    public class J2534Channel : Common.LiteDisposable
+    public class Channel : Common.LiteDisposable
     {
         private object sync { get; }
         private int channelId;
@@ -43,7 +43,7 @@ namespace SAE.J2534
         public int DefaultRxTimeout { get; set; }
         public TxFlag DefaultTxFlag { get; set; }
 
-        internal J2534Channel(Device Device, Protocol ProtocolID, Baud Baud, ConnectFlag ConnectFlags, int ChannelID, object Sync)
+        internal Channel(Device Device, Protocol ProtocolID, Baud Baud, ConnectFlag ConnectFlags, int ChannelID, object Sync)
         {
             sync = Sync;
             channelId = ChannelID;

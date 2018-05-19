@@ -13,7 +13,6 @@ Available on NuGet! [NuGet Gallery: J2534-Sharp]
 - Support for DrewTech API.  Support has been included for undocumented DrewTech API calls
 
 ## TODO's ##
-- Merge the name-spaces to just 'J2534'.  The name-space division seems to cause more clutter than it solves
 - Test the FivebaudInit and Fastinit methods.
 - Test with an actual v2.02 driver.
 - Finish the v5.00 implementation (can anyone send me the spec please??!!)
@@ -30,34 +29,30 @@ The traditional usage will use explicit filter definition and using disposables 
 using System;
 using System.Linq;
 
-using J2534;
-using J2534.Definitions;
-using J2534.DataClasses;
-
 namespace J5234Examples
 {
     class Program
     {
         static void Main(string[] args)
         {
-            MessageFilter FlowControlFilter = new MessageFilter()
+            J2534.MessageFilter FlowControlFilter = new J2534.MessageFilter()
             {
-                FilterType = J2534Filter.FLOW_CONTROL_FILTER,
+                FilterType = J2534.Filter.FLOW_CONTROL_FILTER,
                 Mask = new byte[] { 0xFF, 0xFF, 0xFF, 0xFF },
                 Pattern = new byte[] { 0x00, 0x00, 0x07, 0xE8 },
                 FlowControl = new byte[] { 0x00, 0x00, 0x07, 0xE0 }
             };
 
-            string DllFileName = APIFactory.GetAPIList().First().Filename;
+            string DllFileName = J2534.APIFactory.GetAPIList().First().Filename;
 
-            using (J2534API API = APIFactory.GetAPI(DllFileName))
-            using (J2534Device Device = API.GetDevice())
-            using (J2534Channel Channel = Device.GetChannel(J2534Protocol.ISO15765, J2534Baud.ISO15765, J2534CONNECTFLAG.NONE))
+            using (J2534.API API = J2534.APIFactory.GetAPI(DllFileName))
+            using (J2534.Device Device = API.GetDevice())
+            using (J2534.Channel Channel = Device.GetChannel(J2534.Protocol.ISO15765, J2534.Baud.ISO15765, J2534.ConnectFlag.NONE))
             {
                 Channel.StartMsgFilter(FlowControlFilter);
                 Console.WriteLine($"Voltage is {Channel.MeasureBatteryVoltage() / 1000}");
                 Channel.SendMessage(new byte[] { 0x00, 0x00, 0x07, 0xE0, 0x01, 0x00 });
-                GetMessageResults Response = Channel.GetMessage();
+                J2534.GetMessageResults Response = Channel.GetMessage();
             }
         }
     }
@@ -70,26 +65,22 @@ The simplified usage take advantage of built in 'templates' for creating the fil
 using System;
 using System.Linq;
 
-using J2534;
-using J2534.Definitions;
-using J2534.DataClasses;
-
 namespace J5234Examples
 {
     class Program
     {
         static void Main(string[] args)
         {
-            string DllFileName = APIFactory.GetAPIList().First().Filename;
+            string DllFileName = J2534.APIFactory.GetAPIList().First().Filename;
 
-            using (J2534API API = APIFactory.GetAPI(DllFileName))
-            using (J2534Device Device = API.GetDevice())
-            using (J2534Channel Channel = Device.GetChannel(J2534Protocol.ISO15765, J2534Baud.ISO15765, J2534CONNECTFLAG.NONE))
+            using (J2534.API API = J2534.APIFactory.GetAPI(DllFileName))
+            using (J2534.Device Device = API.GetDevice())
+            using (J2534.Channel Channel = Device.GetChannel(J2534Protocol.ISO15765, J2534Baud.ISO15765, J2534CONNECTFLAG.NONE))
             {
-                Channel.StartMsgFilter(new MessageFilter(UserFilterType.STANDARDISO15765, new byte[] { 0x00, 0x00, 0x07, 0xE0}));
+                Channel.StartMsgFilter(new J2534.MessageFilter(J2534.UserFilterType.STANDARDISO15765, new byte[] { 0x00, 0x00, 0x07, 0xE0}));
                 Console.WriteLine($"Voltage is {Channel.MeasureBatteryVoltage() / 1000}");
                 Channel.SendMessage(new byte[] { 0x00, 0x00, 0x07, 0xE0, 0x01, 0x00 });
-                GetMessageResults Response = Channel.GetMessage();
+                J2534.GetMessageResults Response = Channel.GetMessage();
             }
         }
     }
@@ -104,31 +95,27 @@ around.
 using System;
 using System.Linq;
 
-using J2534;
-using J2534.Definitions;
-using J2534.DataClasses;
-
 namespace J5234Examples
 {
     class Program
     {
         static void Main(string[] args)
         {
-            using (var factory = new APIFactory())
+            using (var factory = new J2534.APIFactory())
             {
                 Run();
             }
         }
         static void Run()
         {
-            string DllFileName = APIFactory.GetAPIList().First().Filename;
+            string DllFileName = J2534.APIFactory.GetAPIList().First().Filename;
 
-            J2534Channel Channel = APIFactory.GetAPI(DllFileName).GetDevice().GetChannel(J2534Protocol.ISO15765, J2534Baud.ISO15765, J2534CONNECTFLAG.NONE);
+            J2534Channel Channel = J2534.APIFactory.GetAPI(DllFileName).GetDevice().GetChannel(J2534.Protocol.ISO15765, J2534.Baud.ISO15765, J2534.ConnectFlag.NONE);
 
-            Channel.StartMsgFilter(new MessageFilter(UserFilterType.STANDARDISO15765, new byte[] { 0x00, 0x00, 0x07, 0xE0 }));
+            Channel.StartMsgFilter(new J2534.MessageFilter(J2534.UserFilterType.STANDARDISO15765, new byte[] { 0x00, 0x00, 0x07, 0xE0 }));
             Console.WriteLine($"Voltage is {Channel.MeasureBatteryVoltage() / 1000}");
             Channel.SendMessage(new byte[] { 0x00, 0x00, 0x07, 0xE0, 0x01, 0x00 });
-            GetMessageResults Response = Channel.GetMessage();
+            J2534.GetMessageResults Response = Channel.GetMessage();
         }
     }
 }

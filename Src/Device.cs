@@ -103,7 +103,7 @@ namespace SAE.J2534
         /// <param name="Baud">Connection baud-rate</param>
         /// <param name="ConnectFlags">Connection flags</param>
         /// <returns>A connected J2534Channel object</returns>
-        public J2534Channel GetChannel(Protocol ProtocolID, Baud Baud, ConnectFlag ConnectFlags, bool ChannelLevelSync = false)
+        public Channel GetChannel(Protocol ProtocolID, Baud Baud, ConnectFlag ConnectFlags, bool ChannelLevelSync = false)
         {
             using (HeapInt hChannelID = new HeapInt())
             {
@@ -111,7 +111,7 @@ namespace SAE.J2534
                 {
                     API.CheckResult(API.PTConnect(deviceId, (int)ProtocolID, (int)ConnectFlags, (int)Baud, (IntPtr)hChannelID));
                 }
-                var NewChannel = new J2534Channel(this, ProtocolID, Baud, ConnectFlags, hChannelID.Value, ChannelLevelSync ? new object() : sync);
+                var NewChannel = new Channel(this, ProtocolID, Baud, ConnectFlags, hChannelID.Value, ChannelLevelSync ? new object() : sync);
                 OnDisposing += NewChannel.Dispose;
                 return NewChannel;
             }
