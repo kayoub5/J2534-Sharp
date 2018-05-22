@@ -169,9 +169,9 @@ namespace SAE.J2534
                                                            (IntPtr)hMessageID,
                                                            PeriodicMessage.Interval));
                     PeriodicMessage.MessageID = hMessageID.Value;
-                    PeriodicMsgList.Add(PeriodicMessage);
+                    periodicMsgList.Add(PeriodicMessage);
                 }
-                return PeriodicMsgList.IndexOf(PeriodicMessage);
+                return periodicMsgList.IndexOf(PeriodicMessage);
             }
         }
 
@@ -184,6 +184,7 @@ namespace SAE.J2534
             lock (sync)
             {
                 API.CheckResult(API.PTStopPeriodicMsg(channelId, PeriodicMsgList[Index].MessageID));
+                periodicMsgList.RemoveAt(Index);
             }
         }
 
