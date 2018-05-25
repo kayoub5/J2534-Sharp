@@ -124,13 +124,17 @@ namespace SAE.J2534
                                          DetailsBuilder.ToString());
             }
         }
-
-        protected override void DisposeManaged()
+        public static void StaticDispose()
         {
-            foreach(var API in Cache.Values.ToArray())
+            foreach (var API in Cache.Values.ToArray())
             {
                 API.Dispose();
             }
+        }
+
+        protected override void DisposeManaged()
+        {
+            StaticDispose();
         }
     }
 }

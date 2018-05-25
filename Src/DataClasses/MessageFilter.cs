@@ -105,7 +105,7 @@ namespace SAE.J2534
             Mask[2] = 0xFF;
             Mask[3] = 0xFF;
 
-            Pattern = SourceAddress;
+            Pattern = SourceAddress.ToArray();
             Pattern[3] += 0x08;
 
             FlowControl = SourceAddress;

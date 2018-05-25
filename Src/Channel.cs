@@ -52,8 +52,8 @@ namespace SAE.J2534
             this.Device = Device;
             this.ProtocolID = ProtocolID;
             this.ConnectFlags = ConnectFlags;
-            DefaultTxTimeout = 450;
-            DefaultRxTimeout = 450;
+            DefaultTxTimeout = 100;
+            DefaultRxTimeout = 300;
             DefaultTxFlag = TxFlag.NONE;
         }
         /// <summary>
