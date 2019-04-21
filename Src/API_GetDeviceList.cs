@@ -37,7 +37,7 @@ namespace SAE.J2534
             //Need to make some special sauce to get from registry here
             if (APISignature.SAE_API == SAE_API.V500_SIGNATURE)
             {
-
+                throw new System.NotImplementedException("J2534 v5 support is not complete!");
             }
             else if (APISignature.DREWTECH_API.HasFlag(DrewTech_API.GETNEXTCARDAQ))
             {
