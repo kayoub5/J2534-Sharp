@@ -28,13 +28,12 @@ namespace SAE.J2534
     internal class HeapInt : Common.UnmanagedDisposable
     {
         public IntPtr Ptr { get; }
-        public HeapInt()
+        public HeapInt() 
         {
             Ptr = Marshal.AllocHGlobal(4);
         }
-        public HeapInt(int i)
+        public HeapInt(int i) : this()
         {
-            Ptr = Marshal.AllocHGlobal(4);
             Marshal.WriteInt32(Ptr, i);
         }
         public int Value

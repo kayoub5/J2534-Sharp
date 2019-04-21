@@ -29,20 +29,16 @@ namespace SAE.J2534
     internal class HeapMessage : Common.UnmanagedDisposable
     {
         public IntPtr Ptr { get; } = Marshal.AllocHGlobal(CONST.J2534MESSAGESIZE);
+
         public HeapMessage(Protocol ProtocolID)
         {
             this.ProtocolID = ProtocolID;
         }
-        public HeapMessage(Protocol ProtocolID, Message Message)
+        public HeapMessage(Protocol ProtocolID, Message Message) : this(ProtocolID, Message.TxFlags, Message.Data)
         {
-            this.ProtocolID = ProtocolID;
-            TxFlags = Message.TxFlags;
-            //this.ExtraDataIndex = Message.ExtraDataIndex;
-            Data = Message.Data;
         }
-        public HeapMessage(Protocol ProtocolID, TxFlag TxFlags, IEnumerable<byte> Data)
+        public HeapMessage(Protocol ProtocolID, TxFlag TxFlags, IEnumerable<byte> Data) : this(ProtocolID)
         {
-            this.ProtocolID = ProtocolID;
             this.TxFlags = TxFlags;
             this.Data = Data;
         }
