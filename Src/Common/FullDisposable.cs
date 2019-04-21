@@ -26,25 +26,50 @@ namespace Common
 {
     public abstract class FullDisposable : LiteDisposable
     {
-        protected override void DisposeManaged()
+        /// <summary>
+        /// Disposal implementation for managed objects should go in this method.
+        /// </summary>
+        protected override void DisposeManaged() { }    //Optional implementation for the superclass
+
+        /// <summary>
+        /// Disposal implementation for unmanaged objects should go in this method.
+        /// </summary>
+        protected abstract void DisposeUnmanaged(); //Super class MUST implement this
+
+        protected sealed override void CallDisposeMethods(bool Disposing)
         {
+            base.CallDisposeMethods(Disposing); //Must dispose of managed objects first
             DisposeUnmanaged();
+            if (Disposing)
+            {
+                GC.SuppressFinalize(this);
+            }
         }
-        protected virtual void DisposeUnmanaged() { }
 
         ~FullDisposable()
         {
             try
             {
-                DisposeUnmanaged();
+                Dispose(false);
             }
-            catch //(Exception exception)
+            catch (Exception exception)
             {
+                //This is bad.  At least attempt to get a log message out if this happens.
                 try
                 {
-                    //Good place to write a log...
+                    System.Text.StringBuilder builder = new System.Text.StringBuilder();
+                    builder.AppendLine($"{DateTime.Now} - Exception in type '{GetType()}'");
+                    builder.Append(exception.StackTrace);
+                    builder.Append(exception.Message);
+                    var inner_exception = exception.InnerException;
+                    while (inner_exception != null)
+                    {
+                        builder.Append(inner_exception.Message);
+                        inner_exception = inner_exception.InnerException;
+                    }
+                    System.IO.File.AppendAllText(@"FinalizerException.txt", builder.ToString());
                 }
-                catch { }   //Swallow any logging exceptions inside a finalizer
+                catch { }   //Swallow any exceptions inside a finalizer
             }
         }
     }

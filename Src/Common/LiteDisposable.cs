@@ -26,26 +26,55 @@ namespace Common
 {
     public abstract class LiteDisposable : IDisposable
     {
-        public delegate void DisposePrototype();
-        public event DisposePrototype OnDisposing;
-        protected BoolInterlock DisposalInterlock = new BoolInterlock();
+        private BoolInterlock DisposalInterlock { get; } = new BoolInterlock();
+
+        public delegate void OnDisposingPrototype();
+        /// <summary>
+        /// Event that fires immediately before object disposal occurs.  Intended for long lived dependant object cleanup.
+        /// </summary>
+        public event OnDisposingPrototype OnDisposing;
+
+        /// <summary>
+        /// Returns true if Dispose() has been called 
+        /// </summary>
         public bool IsDisposed
         {
             get { return DisposalInterlock.IsLocked; }
         }
 
+        /// <summary>
+        /// Checks if Dispose() has been called, and throws an ObjectDisposedxException() if it has
+        /// </summary>
         protected void CheckDisposed()
         {
             if (IsDisposed) throw new ObjectDisposedException(GetType().ToString());
         }
-        public void Dispose()
+
+        /// <summary>
+        /// Disposal implementation for managed objects should go in this method.
+        /// </summary>
+        protected abstract void DisposeManaged();
+
+        protected void Dispose(bool Disposing)
         {
             if (DisposalInterlock.Enter())
+            {
+                CallDisposeMethods(Disposing);
+            }
+        }
+
+        protected virtual void CallDisposeMethods(bool Disposing)
+        {
+            if (Disposing)
             {
                 OnDisposing?.Invoke();
                 DisposeManaged();
             }
         }
-        protected virtual void DisposeManaged() { }
+
+        public void Dispose()
+        {
+            Dispose(true);
+        }
     }
 }
