@@ -33,44 +33,39 @@ namespace SAE.J2534
     {
         private static Dictionary<string, API> Cache = new Dictionary<string, API>();
         /// <summary>
-        /// Queries the registry for registered J2534 API's
-        /// </summary>
-        /// <returns>Array of APIInfo</returns>
-        public static APIInfo[] GetAPIList()
-        {
-            var result = new List<APIInfo>();
-
-            foreach (APIInfo API in GetRegisteryEntries())
-                result.Add(API);
-
-            return result.ToArray();
-        }
-        /// <summary>
         /// Loads an API, verifies its signature and returns the managed wrapper 
         /// </summary>
         /// <param name="Filename">DLL File to load</param>
         /// <returns>JManaged 2534API</returns>
         public static API GetAPI(string Filename)
         {
-            if (Cache.ContainsKey(Filename)) return Cache[Filename];
-
-            if (!File.Exists(Filename)) throw new DllNotFoundException($"DLL Not Found! {Filename}");
-
-            var API = new API(Filename);
-            if (API.APISignature.SAE_API != SAE_API.V202_SIGNATURE &&
-                API.APISignature.SAE_API != SAE_API.V404_SIGNATURE &&
-                API.APISignature.SAE_API != SAE_API.V500_SIGNATURE)
+            lock (Cache)
             {
-                API.Dispose();
-                throw new MissingMemberException($"No compatible export signature was found in DLL {Filename}");
-            }
+                if (!Cache.ContainsKey(Filename))
+                {
+                    if (!File.Exists(Filename)) throw new DllNotFoundException($"DLL Not Found! {Filename}");
 
-            API.OnDisposing += () => Cache.Remove(Filename);
-            Cache.Add(Filename, API);
-            return API;
+                    var API = new API(Filename);
+                    if (API.APISignature.SAE_API != SAE_API.V202_SIGNATURE &&
+                        API.APISignature.SAE_API != SAE_API.V404_SIGNATURE &&
+                        API.APISignature.SAE_API != SAE_API.V500_SIGNATURE)
+                    {
+                        API.Dispose();
+                        throw new MissingMemberException($"No compatible export signature was found in DLL {Filename}");
+                    }
+
+                    API.OnDisposing += () => Cache.Remove(Filename);
+                    Cache.Add(Filename, API);
+                }
+                return Cache[Filename];
+            }
         }
 
-        private static IEnumerable<APIInfo> GetRegisteryEntries()
+        /// <summary>
+        /// Queries the registry for registered J2534 API's
+        /// </summary>
+        /// <returns>APIInfo enumerable</returns>
+        public static IEnumerable<APIInfo> GetAPIinfo()
         {
             Dictionary<string, string> DetailOptions = new Dictionary<string, string>();
             DetailOptions.Add("CAN", "CAN Bus");
