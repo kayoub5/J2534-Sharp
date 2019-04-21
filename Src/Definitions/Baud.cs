@@ -45,37 +45,68 @@
  */
 #endregion License
 
+using System.ComponentModel;
+
 namespace SAE.J2534
 {
     public enum Baud
     {
+        [Description("10.4kbps")]
         ISO9141 = 10400,
+        [Description("10.4kbps")]
         ISO9141_10400 = 10400,
+        [Description("10kbps")]
         ISO9141_10000 = 10000,
 
+        [Description("10.4kbps")]
         ISO14230 = 10400,
+        [Description("10.4kbps")]
         ISO14230_10400 = 10400,
+        [Description("10kbps")]
         ISO14230_10000 = 10000,
 
+        [Description("41.6kbps")]
         J1850PWM = 41600,
+        [Description("41.6kbps")]
         J1850PWM_41600 = 41600,
+        [Description("83.2kbps")]
         J1850PWM_83200 = 83200,
 
+        [Description("10.4kbps")]
         J1850VPW = 10400,
+        [Description("10.4kbps")]
         J1850VPW_10400 = 10400,
+        [Description("41.6kbps")]
         J1850VPW_41600 = 41600,
 
+        [Description("500kbps")]
         CAN = 500000,
+        [Description("125kbps")]
         CAN_125000 = 125000,
+        [Description("250kbps")]
         CAN_250000 = 250000,
+        [Description("500kbps")]
         CAN_500000 = 500000,
 
+        [Description("500kbps")]
         ISO15765 = 500000,
+        [Description("125kbps")]
         ISO15765_125000 = 125000,
+        [Description("250kbps")]
         ISO15765_250000 = 250000,
+        [Description("500kbps")]
         ISO15765_500000 = 500000,
 
+        [Description("7812bps")]
         SCI_7812 = 7812,
+        [Description("62.5kbps")]
         SCI_62500 = 62500
+    }
+    public static class BaudExtensions
+    {
+        public static string GetDescription(this Baud baud)
+        {
+            return Common.EnumHelper.GetDescription(baud);
+        }
     }
 }
