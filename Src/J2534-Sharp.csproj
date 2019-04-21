@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-	<BaseIntermediateOutputPath>$(SolutionDir)\obj\</BaseIntermediateOutputPath>
+    <BaseIntermediateOutputPath>$(SolutionDir)\obj\</BaseIntermediateOutputPath>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -54,8 +54,8 @@
   <ItemGroup>
     <Compile Include="APIFactory.cs" />
     <Compile Include="Common\BoolInterlock.cs" />
-    <Compile Include="Common\FullDisposable.cs" />
-    <Compile Include="Common\LiteDisposable.cs" />
+    <Compile Include="Common\UnmanagedDisposable.cs" />
+    <Compile Include="Common\ManagedDisposable.cs" />
     <Compile Include="DataClasses\GetMessageResults.cs" />
     <Compile Include="DataClasses\GetNextCarDAQResults.cs" />
     <Compile Include="DataClasses\API_Signature.cs" />

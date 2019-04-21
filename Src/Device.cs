@@ -24,7 +24,7 @@ using System;
 
 namespace SAE.J2534
 {
-    public partial class Device :Common.LiteDisposable
+    public partial class Device :Common.ManagedDisposable
     {
         private int deviceId;
         private object sync;

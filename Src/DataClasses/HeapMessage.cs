@@ -26,7 +26,7 @@ using System.Runtime.InteropServices;
 
 namespace SAE.J2534
 {
-    internal class HeapMessage : Common.FullDisposable
+    internal class HeapMessage : Common.UnmanagedDisposable
     {
         public IntPtr Ptr { get; } = Marshal.AllocHGlobal(CONST.J2534MESSAGESIZE);
         public HeapMessage(Protocol ProtocolID)

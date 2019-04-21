@@ -24,7 +24,7 @@ using System;
 
 namespace Common
 {
-    public abstract class FullDisposable : LiteDisposable
+    public abstract class UnmanagedDisposable : ManagedDisposable
     {
         /// <summary>
         /// Disposal implementation for managed objects should go in this method.
@@ -46,7 +46,7 @@ namespace Common
             }
         }
 
-        ~FullDisposable()
+        ~UnmanagedDisposable()
         {
             try
             {

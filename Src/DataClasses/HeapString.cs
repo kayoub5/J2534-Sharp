@@ -25,7 +25,7 @@ using System.Runtime.InteropServices;
 
 namespace SAE.J2534
 {
-    internal class HeapString : Common.FullDisposable
+    internal class HeapString : Common.UnmanagedDisposable
     {
         public IntPtr Ptr { get; }
         public HeapString(string Str)

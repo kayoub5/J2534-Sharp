@@ -27,7 +27,7 @@ using System.Runtime.CompilerServices;
 
 namespace SAE.J2534
 {
-    public class HeapMessageArray : Common.FullDisposable
+    public class HeapMessageArray : Common.UnmanagedDisposable
     {
         private int protocolID;
         private int array_max_length;

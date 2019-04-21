@@ -24,7 +24,7 @@ using System;
 
 namespace Common
 {
-    public abstract class LiteDisposable : IDisposable
+    public abstract class ManagedDisposable : IDisposable
     {
         private BoolInterlock DisposalInterlock { get; } = new BoolInterlock();
 

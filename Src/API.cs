@@ -49,7 +49,7 @@ using System.Runtime.InteropServices;
 
 namespace SAE.J2534
 {
-    public partial class API : Common.FullDisposable
+    public partial class API : Common.UnmanagedDisposable
     {
         private object sync = new object();
         private IntPtr pLibrary;

@@ -29,7 +29,7 @@ using Microsoft.Win32;
 
 namespace SAE.J2534
 {
-    public class APIFactory : Common.LiteDisposable
+    public class APIFactory : Common.ManagedDisposable
     {
         private static Dictionary<string, API> Cache = new Dictionary<string, API>();
         /// <summary>

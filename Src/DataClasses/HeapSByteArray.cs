@@ -25,7 +25,7 @@ using System.Runtime.InteropServices;
 
 namespace SAE.J2534
 {
-    internal class HeapSByteArray : Common.FullDisposable
+    internal class HeapSByteArray : Common.UnmanagedDisposable
     {
         public IntPtr Ptr { get; }
         public HeapSByteArray(byte Byte)

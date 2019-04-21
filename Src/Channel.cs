@@ -26,7 +26,7 @@ using System.Linq;
 
 namespace SAE.J2534
 {
-    public class Channel : Common.LiteDisposable
+    public class Channel : Common.ManagedDisposable
     {
         private object sync { get; }
         private int channelId;
