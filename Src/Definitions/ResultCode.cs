@@ -120,10 +120,7 @@ namespace SAE.J2534
         }
         public static string GetDescription(this ResultCode code)
         {
-            var members = typeof(ResultCode).GetMember(code.ToString());
-            var attributes = members[0]?.GetCustomAttributes(typeof(DescriptionAttribute), false);
-            return ((DescriptionAttribute)attributes[0])?.Description ?? String.Empty;
+            return Common.EnumHelper.GetDescription(code);
         }
     }
-
 }

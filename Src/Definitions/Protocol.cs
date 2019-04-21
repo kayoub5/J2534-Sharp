@@ -44,20 +44,38 @@
  * 
  */
 #endregion License
+using System.ComponentModel;
 
 namespace SAE.J2534
 {
     public enum Protocol
     {
+        [Description("SAE J1850 VPW")]
         J1850VPW = 0x01,
+        [Description("SAE J1850 PWM")]
         J1850PWM = 0x02,
+        [Description("ISO 9141")]
         ISO9141 = 0x03,
+        [Description("ISO 14229")]
         ISO14230 = 0x04,
+        [Description("CAN")]
         CAN = 0x05,
+        [Description("ISO 15765")]
         ISO15765 = 0x06,
+        [Description("SCI-A Engine")]
         SCI_A_ENGINE = 0x07,
+        [Description("SCI-A Transmission")]
         SCI_A_TRANS = 0x08,
+        [Description("SCI-B Engine")]
         SCI_B_ENGINE = 0x09,
+        [Description("SCI-B Transmission")]
         SCI_B_TRANS = 0x0A
+    }
+    public static class ProtocolExtensions
+    {
+        public static string GetDescription(this Protocol protocol)
+        {
+            return Common.EnumHelper.GetDescription(protocol);
+        }
     }
 }

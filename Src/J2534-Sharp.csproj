@@ -54,6 +54,7 @@
   <ItemGroup>
     <Compile Include="APIFactory.cs" />
     <Compile Include="Common\BoolInterlock.cs" />
+    <Compile Include="Common\EnumHelper.cs" />
     <Compile Include="Common\UnmanagedDisposable.cs" />
     <Compile Include="Common\ManagedDisposable.cs" />
     <Compile Include="DataClasses\GetMessageResults.cs" />
