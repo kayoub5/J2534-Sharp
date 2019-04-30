@@ -44,7 +44,7 @@ namespace J5234Examples
                 FlowControl = new byte[] { 0x00, 0x00, 0x07, 0xE0 }
             };
 
-            string DllFileName = APIFactory.GetAPIList().First().Filename;
+            string DllFileName = APIFactory.GetAPIinfo().First().Filename;
 
             using (API API = APIFactory.GetAPI(DllFileName))
             using (Device Device = API.GetDevice())
@@ -73,7 +73,7 @@ namespace J5234Examples
     {
         static void Main(string[] args)
         {
-            string DllFileName = APIFactory.GetAPIList().First().Filename;
+            string DllFileName = APIFactory.GetAPIinfo().First().Filename;
 
             using (API API = APIFactory.GetAPI(DllFileName))
             using (Device Device = API.GetDevice())
@@ -111,7 +111,7 @@ namespace J5234Examples
         }
         static void Run()
         {
-            string DllFileName = APIFactory.GetAPIList().First().Filename;
+            string DllFileName = APIFactory.GetAPIinfo().First().Filename;
 
             Channel Channel = APIFactory.GetAPI(DllFileName).GetDevice().GetChannel(Protocol.ISO15765, Baud.ISO15765, ConnectFlag.NONE);
 
