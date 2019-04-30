@@ -106,7 +106,7 @@ namespace SAE.J2534
     {
         public static string GetDescription(this Baud baud)
         {
-            return Common.EnumHelper.GetDescription(baud);
+            return Common.EnumHelper.GetMemberDescription(baud);
         }
     }
 }

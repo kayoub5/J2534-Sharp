@@ -75,7 +75,7 @@ namespace SAE.J2534
     {
         public static string GetDescription(this Protocol protocol)
         {
-            return Common.EnumHelper.GetDescription(protocol);
+            return Common.EnumHelper.GetMemberDescription(protocol);
         }
     }
 }

@@ -120,7 +120,7 @@ namespace SAE.J2534
         }
         public static string GetDescription(this ResultCode code)
         {
-            return Common.EnumHelper.GetDescription(code);
+            return Common.EnumHelper.GetMemberDescription(code);
         }
     }
 }
