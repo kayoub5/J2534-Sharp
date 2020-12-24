@@ -166,7 +166,7 @@ namespace SAE.J2534
         /// </summary>
         /// <param name="PeriodicMessage">Periodic message object</param>
         /// <param name="PeriodicMessageProtocolID">Periodic message protocol</param>
-        /// <returns>Message index</returns>
+        /// <returns>Message Id</returns>
         public int StartPeriodicMessage(PeriodicMessage PeriodicMessage, Protocol PeriodicMessageProtocolID)
         {
             using (HeapInt hMessageID = new HeapInt())
@@ -181,7 +181,7 @@ namespace SAE.J2534
                     PeriodicMessage.MessageID = hMessageID.Value;
                     periodicMsgList.Add(PeriodicMessage);
                 }
-                return periodicMsgList.IndexOf(PeriodicMessage);
+                return PeriodicMessage.MessageID;
             }
         }
 
@@ -189,19 +189,19 @@ namespace SAE.J2534
         /// Stops automated transmission of a periodic message.
         /// </summary>
         /// <param name="Index"Message index>Message index</param>
-        public void StopPeriodicMsg(int Index)
+        public void StopPeriodicMsg(int MessageId)
         {
             lock (sync)
             {
-                API.CheckResult(API.PTStopPeriodicMsg(channelId, PeriodicMsgList[Index].MessageID));
-                periodicMsgList.RemoveAt(Index);
+                API.CheckResult(API.PTStopPeriodicMsg(channelId, MessageId));
+                periodicMsgList.RemoveAll(m => m.MessageID == MessageId);
             }
         }
         /// <summary>
         /// Starts a message filter for the channel protocol
         /// </summary>
         /// <param name="Filter">Message filter object</param>
-        /// <returns>Filter index</returns>
+        /// <returns>Filter Id</returns>
         public int StartMsgFilter(MessageFilter Filter)
         {
             return StartMsgFilter(Filter, ProtocolID);
@@ -211,7 +211,7 @@ namespace SAE.J2534
         /// </summary>
         /// <param name="Filter">Message filter object</param>
         /// <param name="FilterProtocolID">Message filter protocol</param>
-        /// <returns>Filter index</returns>
+        /// <returns>Filter Id</returns>
         public int StartMsgFilter(MessageFilter Filter, Protocol FilterProtocolID)
         {
             using (HeapInt hFilterID = new HeapInt())
@@ -230,19 +230,19 @@ namespace SAE.J2534
                     Filter.FilterId = hFilterID.Value;
                     filterList.Add(Filter);
                 }
-                return filterList.IndexOf(Filter);
+                return Filter.FilterId;
             }
         }
         /// <summary>
         /// Stops a message filter
         /// </summary>
-        /// <param name="Index">Filter index</param>
-        public void StopMsgFilter(int Index)
+        /// <param name="FilterId">Filter Id</param>
+        public void StopMsgFilter(int FilterId)
         {
             lock (sync)
             {
-                API.CheckResult(API.PTStopMsgFilter(channelId, filterList[Index].FilterId));
-                filterList.RemoveAt(Index);
+                API.CheckResult(API.PTStopMsgFilter(channelId, FilterId));
+                filterList.RemoveAll(f => f.FilterId == FilterId);
             }
         }
         /// <summary>
