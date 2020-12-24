@@ -246,6 +246,21 @@ namespace SAE.J2534
             }
         }
         /// <summary>
+        /// Stops all message filters
+        /// Alternative to ClearMsgFilters()
+        /// </summary>
+        public void StopAllMsgFilters()
+        {
+            lock (sync)
+            {
+                var filterIdList = filterList.Select(f => f.FilterId).ToList();
+                foreach (int filterId in filterIdList)
+                {
+                    StopMsgFilter(filterId);
+                }
+            }
+        }
+        /// <summary>
         /// Gets a configuration parameter for the channel
         /// </summary>
         /// <param name="Parameter">Parameter to return</param>
@@ -344,6 +359,7 @@ namespace SAE.J2534
             lock (sync)
             {
                 API.CheckResult(API.PTIoctl(channelId, (int)IOCTL.CLEAR_MSG_FILTERS, IntPtr.Zero, IntPtr.Zero));
+                filterList.Clear();
             }
         }
         /// <summary>
