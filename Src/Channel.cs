@@ -153,14 +153,24 @@ namespace SAE.J2534
                                                 DefaultTxTimeout));
         }
         /// <summary>
-        /// Starts automated periodic transmission of a message
+        /// Starts automated periodic transmission of a message using the channel protocol
         /// </summary>
         /// <param name="PeriodicMessage">Periodic message object</param>
         /// <returns>Message index</returns>
         public int StartPeriodicMessage(PeriodicMessage PeriodicMessage)
         {
-            using(HeapInt hMessageID = new HeapInt())
-            using(HeapMessage hPeriodicMessage = new HeapMessage(ProtocolID, PeriodicMessage))
+            return StartPeriodicMessage(PeriodicMessage, ProtocolID);
+        }
+        /// <summary>
+        /// Starts automated periodic transmission of a message
+        /// </summary>
+        /// <param name="PeriodicMessage">Periodic message object</param>
+        /// <param name="PeriodicMessageProtocolID">Periodic message protocol</param>
+        /// <returns>Message index</returns>
+        public int StartPeriodicMessage(PeriodicMessage PeriodicMessage, Protocol PeriodicMessageProtocolID)
+        {
+            using (HeapInt hMessageID = new HeapInt())
+            using(HeapMessage hPeriodicMessage = new HeapMessage(PeriodicMessageProtocolID, PeriodicMessage))
             {
                 lock (sync)
                 {
@@ -187,18 +197,27 @@ namespace SAE.J2534
                 periodicMsgList.RemoveAt(Index);
             }
         }
-
         /// <summary>
-        /// Starts a message filter
+        /// Starts a message filter for the channel protocol
         /// </summary>
         /// <param name="Filter">Message filter object</param>
         /// <returns>Filter index</returns>
         public int StartMsgFilter(MessageFilter Filter)
         {
+            return StartMsgFilter(Filter, ProtocolID);
+        }
+        /// <summary>
+        /// Starts a message filter
+        /// </summary>
+        /// <param name="Filter">Message filter object</param>
+        /// <param name="FilterProtocolID">Message filter protocol</param>
+        /// <returns>Filter index</returns>
+        public int StartMsgFilter(MessageFilter Filter, Protocol FilterProtocolID)
+        {
             using (HeapInt hFilterID = new HeapInt())
-            using (HeapMessage hMask = new HeapMessage(ProtocolID, Filter.TxFlags, Filter.Mask))
-            using (HeapMessage hPattern = new HeapMessage(ProtocolID, Filter.TxFlags, Filter.Pattern))
-            using (HeapMessage hFlowControl = new HeapMessage(ProtocolID, Filter.TxFlags, Filter.FlowControl))
+            using (HeapMessage hMask = new HeapMessage(FilterProtocolID, Filter.TxFlags, Filter.Mask))
+            using (HeapMessage hPattern = new HeapMessage(FilterProtocolID, Filter.TxFlags, Filter.Pattern))
+            using (HeapMessage hFlowControl = new HeapMessage(FilterProtocolID, Filter.TxFlags, Filter.FlowControl))
             {
                 lock (sync)
                 {
