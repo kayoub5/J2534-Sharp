@@ -105,6 +105,12 @@ namespace SAE.J2534
         INVALID_BAUDRATE = 0x19,
         [Description("PassThru device identifier was not recognized.")]
         INVALID_DEVICE_ID = 0x1A,
+        [Description("Invalid IOCTL Parameter ID (either in the reserved range or not appropriate for the current channel)")]
+        ERR_INVALID_IOCTL_PARAM_ID = 0x1E,
+        [Description("Programming voltage is currently being applied to another pin")]
+        ERR_VOLTAGE_IN_USE = 0x1F,
+        [Description("Pin number specified is currently in use(another protocol is using the pin)")]
+        ERR_PIN_IN_USE = 0x20,
         [Description("The API call was not mapped to a function in the PassThru DLL.")]
         FUNCTION_NOT_ASSIGNED = 0x7EADBEEF  //non-standard flag used by the wrapper to indicate no function assigned
     }

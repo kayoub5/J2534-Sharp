@@ -25,7 +25,7 @@ using System.Runtime.InteropServices;
 namespace SAE.J2534
 {
     [StructLayout(LayoutKind.Explicit)]
-    public class SConfig
+    public struct SConfig
     {
         [FieldOffset(0), MarshalAs(UnmanagedType.U4)]
         public Parameter Parameter;

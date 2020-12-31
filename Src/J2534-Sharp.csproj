@@ -65,11 +65,17 @@
     <Compile Include="DataClasses\HeapIntPtr.cs" />
     <Compile Include="DataClasses\HeapSByteArray.cs" />
     <Compile Include="DataClasses\HeapSConfigArray.cs" />
+    <Compile Include="DataClasses\HeapSParamArray.cs" />
     <Compile Include="DataClasses\HeapString.cs" />
+    <Compile Include="DataClasses\HeapStructArray.cs" />
     <Compile Include="DataClasses\SConfig.cs" />
+    <Compile Include="DataClasses\SParam.cs" />
     <Compile Include="Definitions\Const.cs" />
     <Compile Include="Definitions\Baud.cs" />
     <Compile Include="Definitions\ConnectFlag.cs" />
+    <Compile Include="Definitions\DeviceInfo.cs" />
+    <Compile Include="Definitions\DeviceParameter.cs" />
+    <Compile Include="Definitions\ProtocolInfo.cs" />
     <Compile Include="Definitions\ResultCode.cs" />
     <Compile Include="Definitions\Filter.cs" />
     <Compile Include="Definitions\IOCTL.cs" />

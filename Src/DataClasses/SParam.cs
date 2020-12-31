@@ -1,5 +1,5 @@
 ﻿#region License
-/*Copyright(c) 2018, Brian Humlicek
+/*Copyright(c) 2021, Brian Humlicek
 * https://github.com/BrianHumlicek
 * 
 *Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -20,18 +20,25 @@
 *SOFTWARE.
 */
 #endregion License
-using System;
 using System.Runtime.InteropServices;
-
 namespace SAE.J2534
 {
-    internal class HeapSConfigArray : HeapStructArray<SConfig>
+    [StructLayout(LayoutKind.Explicit)]
+    public struct SParam
     {
-        public HeapSConfigArray(SConfig SConfig) : base(SConfig)
+        [FieldOffset(0), MarshalAs(UnmanagedType.U4)]
+        public DeviceInfo Parameter;
+        [FieldOffset(4), MarshalAs(UnmanagedType.U4)]
+        public int Value;
+        [FieldOffset(8), MarshalAs(UnmanagedType.U4)]
+        public int Supported;
+
+        public SParam(DeviceInfo Parameter, int Value, int Supported)
         {
+            this.Parameter = Parameter;
+            this.Value = Value;
+            this.Supported = Supported;
         }
-        public HeapSConfigArray(SConfig[] SConfigList) : base(SConfigList)
-        {
-        }
+        public int Length => 12;
     }
 }

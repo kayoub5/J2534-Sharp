@@ -304,7 +304,7 @@ namespace SAE.J2534
                 {
                     API.CheckResult(API.PTIoctl(channelId, (int)IOCTL.GET_CONFIG, (IntPtr)hSConfigArray, IntPtr.Zero));
                 }
-                return hSConfigArray.ToSConfigArray();
+                return hSConfigArray.ToArray();
             }
         }
         /// <summary>

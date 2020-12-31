@@ -1,5 +1,5 @@
 ﻿#region License
-/*Copyright(c) 2018, Brian Humlicek
+/*Copyright(c) 2021, Brian Humlicek
 * https://github.com/BrianHumlicek
 * 
 *Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -25,12 +25,12 @@ using System.Runtime.InteropServices;
 
 namespace SAE.J2534
 {
-    internal class HeapSConfigArray : HeapStructArray<SConfig>
+    internal class HeapSParamArray : HeapStructArray<SParam>
     {
-        public HeapSConfigArray(SConfig SConfig) : base(SConfig)
+        HeapSParamArray(SParam SParam) : base(SParam)
         {
         }
-        public HeapSConfigArray(SConfig[] SConfigList) : base(SConfigList)
+        HeapSParamArray(SParam[] SParamList) : base(SParamList)
         {
         }
     }
