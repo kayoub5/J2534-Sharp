@@ -65,7 +65,7 @@ namespace SAE.J2534
         INVALID_IOCTL_VALUE = 0x05,
         [Description("Flags bit field(s) contain(s) an invalid value.")]
         INVALID_FLAGS = 0x06,
-        [Description("Unspecified error, use PassThruGetLastError for obtaining error text string.")]
+        [Description("Unspecified error")]
         FAILED = 0x07,
         [Description("The PassThru device is not connected to the PC.")]
         DEVICE_NOT_CONNECTED = 0x08,
